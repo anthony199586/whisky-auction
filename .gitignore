@@ -1,0 +1,22 @@
+# Large data files — run scraper.py to regenerate
+whisky_auctions.db
+whisky_enriched*.csv
+whisky_model_ready*.csv
+whisky_enriched_with_series.csv
+
+# Trained models — run notebooks to regenerate
+*.pkl
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+__pycache__/
+
+# Virtual environment
+venv/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

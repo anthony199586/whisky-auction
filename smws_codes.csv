@@ -1,0 +1,213 @@
+code,distillery,region,country,status,is_closed
+1,Glenfarclas,Speyside,Scotland,operational,False
+2,Glenlivet,Speyside,Scotland,operational,False
+3,Bowmore,Islay,Scotland,operational,False
+4,Highland Park,Islands,Scotland,operational,False
+5,Auchentoshan,Lowland,Scotland,operational,False
+6,Macduff,Highland,Scotland,operational,False
+7,Longmorn,Speyside,Scotland,operational,False
+8,Tamdhu,Speyside,Scotland,operational,False
+9,Glen Grant,Speyside,Scotland,operational,False
+10,Bunnahabhain,Islay,Scotland,operational,False
+11,Tomatin,Highland,Scotland,operational,False
+12,BenRiach,Speyside,Scotland,operational,False
+13,Dalmore,Highland,Scotland,operational,False
+14,Talisker,Islands,Scotland,operational,False
+15,Glenfiddich,Speyside,Scotland,operational,False
+16,Glenturret,Highland,Scotland,operational,False
+17,Scapa,Islands,Scotland,operational,False
+18,Inchgower,Speyside,Scotland,operational,False
+19,Glen Garioch,Highland,Scotland,operational,False
+20,Inverleven,Lowland,Scotland,closed,True
+21,Glenglassaugh,Highland,Scotland,operational,False
+22,Glenkinchie,Lowland,Scotland,operational,False
+23,Bruichladdich,Islay,Scotland,operational,False
+24,Macallan,Speyside,Scotland,operational,False
+25,Rosebank,Lowland,Scotland,reopening,False
+26,Clynelish,Highland,Scotland,operational,False
+27,Springbank,Campbeltown,Scotland,operational,False
+28,Tullibardine,Highland,Scotland,operational,False
+29,Laphroaig,Islay,Scotland,operational,False
+30,Glenrothes,Speyside,Scotland,operational,False
+31,Isle of Jura,Islands,Scotland,operational,False
+32,Edradour,Highland,Scotland,operational,False
+33,Ardbeg,Islay,Scotland,operational,False
+34,Tamnavulin,Speyside,Scotland,operational,False
+35,Glen Moray,Speyside,Scotland,operational,False
+36,Benrinnes,Speyside,Scotland,operational,False
+37,Cragganmore,Speyside,Scotland,operational,False
+38,Caperdonich,Speyside,Scotland,closed,True
+39,Linkwood,Speyside,Scotland,operational,False
+40,Balvenie,Speyside,Scotland,operational,False
+41,Dailuaine,Speyside,Scotland,operational,False
+42,Tobermory,Islands,Scotland,operational,False
+43,Port Ellen,Islay,Scotland,reopening,True
+44,Craigellachie,Speyside,Scotland,operational,False
+45,Dallas Dhu,Speyside,Scotland,closed,True
+46,Glenlossie,Speyside,Scotland,operational,False
+47,Benromach,Speyside,Scotland,operational,False
+48,Balmenach,Speyside,Scotland,operational,False
+49,St Magdalene,Lowland,Scotland,closed,True
+50,Bladnoch,Lowland,Scotland,operational,False
+51,Bushmills,Northern Ireland,Ireland,operational,False
+52,Old Pulteney,Highland,Scotland,operational,False
+53,Caol Ila,Islay,Scotland,operational,False
+54,Aberlour,Speyside,Scotland,operational,False
+55,Royal Brackla,Highland,Scotland,operational,False
+56,Coleburn,Speyside,Scotland,closed,True
+57,Glen Mhor,Highland,Scotland,closed,True
+58,Strathisla,Speyside,Scotland,operational,False
+59,Teaninich,Highland,Scotland,operational,False
+60,Aberfeldy,Highland,Scotland,operational,False
+61,Brora,Highland,Scotland,reopened,False
+62,Glenlochy,Highland,Scotland,closed,True
+63,Glentauchers,Speyside,Scotland,operational,False
+64,Mannochmore,Speyside,Scotland,operational,False
+65,Imperial,Speyside,Scotland,closed,True
+66,Ardmore,Highland,Scotland,operational,False
+67,Banff,Speyside,Scotland,closed,True
+68,Blair Athol,Highland,Scotland,operational,False
+69,Glen Albyn,Highland,Scotland,closed,True
+70,Balblair,Highland,Scotland,operational,False
+71,Glenburgie,Speyside,Scotland,operational,False
+72,Miltonduff,Speyside,Scotland,operational,False
+73,Aultmore,Speyside,Scotland,operational,False
+74,North Port,Highland,Scotland,closed,True
+75,Glenury Royal,Highland,Scotland,closed,True
+76,Mortlach,Speyside,Scotland,operational,False
+77,Glen Ord,Highland,Scotland,operational,False
+78,Ben Nevis,Highland,Scotland,operational,False
+79,Deanston,Highland,Scotland,operational,False
+80,Glen Spey,Speyside,Scotland,operational,False
+81,Glen Keith,Speyside,Scotland,operational,False
+82,Glencadam,Highland,Scotland,operational,False
+83,Convalmore,Speyside,Scotland,closed,True
+84,Glendullan,Speyside,Scotland,operational,False
+85,Glen Elgin,Speyside,Scotland,operational,False
+86,Glenesk,Highland,Scotland,closed,True
+87,Millburn,Highland,Scotland,closed,True
+88,Speyburn,Speyside,Scotland,operational,False
+89,Tomintoul,Speyside,Scotland,operational,False
+90,Pittyvaich,Speyside,Scotland,closed,True
+91,Dufftown,Speyside,Scotland,operational,False
+92,Lochside,Highland,Scotland,closed,True
+93,Glen Scotia,Campbeltown,Scotland,operational,False
+94,Fettercairn,Highland,Scotland,operational,False
+95,Auchroisk,Speyside,Scotland,operational,False
+96,GlenDronach,Highland,Scotland,operational,False
+97,Littlemill,Lowland,Scotland,closed,True
+98,Lomond,Lowland,Scotland,closed,True
+99,Glenugie,Highland,Scotland,closed,True
+100,Strathmill,Speyside,Scotland,operational,False
+101,Knockando,Speyside,Scotland,operational,False
+102,Dalwhinnie,Highland,Scotland,operational,False
+103,Royal Lochnagar,Highland,Scotland,operational,False
+104,Glenburgie (alt),Speyside,Scotland,operational,False
+105,Tormore,Speyside,Scotland,operational,False
+106,Cardhu,Speyside,Scotland,operational,False
+107,GlenAllachie,Speyside,Scotland,operational,False
+108,Allt-a-Bhainne,Speyside,Scotland,operational,False
+109,Mosstowie,Speyside,Scotland,closed,True
+110,Oban,Highland,Scotland,operational,False
+111,Lagavulin,Islay,Scotland,operational,False
+112,Inchmurrin (Loch Lomond),Highland,Scotland,operational,False
+113,Braeval,Speyside,Scotland,operational,False
+114,Longrow (Springbank),Campbeltown,Scotland,operational,False
+115,AnCnoc (Knockdhu),Highland,Scotland,operational,False
+116,Yoichi,Japan,Japan,operational,False
+117,Cooley,Ireland,Ireland,operational,False
+118,Connemara (Cooley),Ireland,Ireland,operational,False
+119,Yamazaki,Japan,Japan,operational,False
+120,Hakushu,Japan,Japan,operational,False
+121,Isle of Arran,Islands,Scotland,operational,False
+122,Croftengea (Loch Lomond),Highland,Scotland,operational,False
+123,Glengoyne,Highland,Scotland,operational,False
+124,Miyagikyo,Japan,Japan,operational,False
+125,Glenmorangie,Highland,Scotland,operational,False
+126,Hazelburn (Springbank),Campbeltown,Scotland,operational,False
+127,Port Charlotte (Bruichladdich),Islay,Scotland,operational,False
+128,Penderyn,Wales,Wales,operational,False
+129,Kilchoman,Islay,Scotland,operational,False
+130,Chichibu,Japan,Japan,operational,False
+131,Hanyu,Japan,Japan,closed,True
+132,Karuizawa,Japan,Japan,closed,True
+133,Westland,USA,USA,operational,False
+134,Paul John,India,India,operational,False
+135,Inchmoan (Loch Lomond),Highland,Scotland,operational,False
+136,Eden Mill,Lowland,Scotland,operational,False
+137,St George's,England,England,operational,False
+138,Nantou,Taiwan,Taiwan,operational,False
+139,Kavalan,Taiwan,Taiwan,operational,False
+140,Balcones,USA,USA,operational,False
+141,Fary Lochan,Denmark,Denmark,operational,False
+142,Breuckelen Distilling,USA,USA,operational,False
+143,Copperworks Distilling,USA,USA,operational,False
+144,High Coast Distillery,Sweden,Sweden,operational,False
+145,Smogen Whisky,Sweden,Sweden,operational,False
+146,Cotswolds,England,England,operational,False
+147,Archie Rose,Australia,Australia,operational,False
+148,Starward,Australia,Australia,operational,False
+149,Ardnamurchan,Highland,Scotland,operational,False
+150,West Cork Distillers,Ireland,Ireland,operational,False
+151,Mackmyra,Sweden,Sweden,operational,False
+152,Shelter Point,Canada,Canada,operational,False
+153,Thy Whisky,Denmark,Denmark,operational,False
+154,Mosgaard Whisky,Denmark,Denmark,operational,False
+155,Milk and Honey,Israel,Israel,operational,False
+156,Glasgow Distillery,Lowland,Scotland,operational,False
+157,Armorik,France,France,operational,False
+158,Yuza,Japan,Japan,operational,False
+159,Mars Shinshu,Japan,Japan,operational,False
+160,Mars Tsunuki,Japan,Japan,operational,False
+161,Nc'Nean,Highland,Scotland,operational,False
+162,Isle of Raasay,Highland,Scotland,operational,False
+163,Isle of Harris,Highland,Scotland,operational,False
+164,Penderyn (double distilled),Wales,Wales,operational,False
+165,Wolfburn (Peated),Highland,Scotland,operational,False
+G1,North British,Lowland,Scotland,operational,False
+G2,Carsebridge,Lowland,Scotland,closed,True
+G3,Caledonian,Lowland,Scotland,closed,True
+G4,Cameronbridge,Lowland,Scotland,operational,False
+G5,Invergordon,Highland,Scotland,operational,False
+G6,Port Dundas,Lowland,Scotland,closed,True
+G7,Girvan,Lowland,Scotland,operational,False
+G8,Cambus,Lowland,Scotland,closed,True
+G9,Loch Lomond,Highland,Scotland,operational,False
+G10,Strathclyde,Lowland,Scotland,operational,False
+G11,Nikka Coffey Grain,Japan,Japan,operational,False
+G12,Nikka Coffey Malt,Japan,Japan,operational,False
+G13,Chita,Japan,Japan,operational,False
+G14,Dumbarton,Lowland,Scotland,closed,True
+G15,Rhosdhu (Loch Lomond),Highland,Scotland,operational,False
+G16,Glasgow Distillery,Lowland,Scotland,operational,False
+B1,Heaven Hill,Kentucky,USA,operational,False
+B2,New Bernheim,Kentucky,USA,operational,False
+B3,Rock Town,Arkansas,USA,operational,False
+B4,FEW Spirits,Illinois,USA,operational,False
+B5,George Dickel,Tennessee,USA,operational,False
+B6,Finger Lakes Distilling,New York,USA,operational,False
+B7,MGP,Indiana,USA,operational,False
+B8,Woodinville,Washington,USA,operational,False
+RW1,FEW Spirits (Rye),Illinois,USA,operational,False
+RW2,Finger Lakes Distilling (Rye),New York,USA,operational,False
+RW3,New York Distilling,New York,USA,operational,False
+RW4,Peerless,Kentucky,USA,operational,False
+RW5,MGP (Rye),Indiana,USA,operational,False
+RW6,Kyro,Finland,Finland,operational,False
+RW7,Journeyman,Michigan,USA,operational,False
+CW1,Heaven Hill (Corn),Kentucky,USA,operational,False
+CW2,Balcones (Corn),Texas,USA,operational,False
+R1,Monymusk,Jamaica,Jamaica,operational,False
+R2,El Dorado,Guyana,Guyana,operational,False
+R3,West Indies Rum,Barbados,Barbados,operational,False
+R4,Angostura,Trinidad,Trinidad,operational,False
+R5,Long Pond,Jamaica,Jamaica,operational,False
+R6,Foursquare,Barbados,Barbados,operational,False
+R7,Hampden,Jamaica,Jamaica,operational,False
+R8,Flor de Cana,Nicaragua,Nicaragua,operational,False
+R9,Ron Abuelo,Panama,Panama,operational,False
+R10,Trinidad Distillers,Trinidad,Trinidad,operational,False
+R11,Worthy Park,Jamaica,Jamaica,operational,False
+R12,Travellers,Belize,Belize,operational,False
+R13,Caroni,Trinidad,Trinidad,closed,True
+R14,Uitvlugt,Guyana,Guyana,operational,False

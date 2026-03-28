@@ -1,0 +1,563 @@
+"auction_date","distillery","region","country","strength","rla","bulk_litres","distillery_status","cask_type","cask_filling","previous_spirit","age","bottles_at_cask_strength","volume_12m","volume_6m","volume_3m","inf_adj_hammer_price","inf_adj_hammer_price_per_bottle_at_cask_strength","inf_adj_hammer_price_per_litre_of_alcohol","inf_adj_hammer_price_per_litre_of_alcohol_per_age","inf_adj_hammer_price_per_age"
+"2025-01-06","Bruichladdich","Islay","Scotland","50.4",74.9,"148.61","Operational","Barrel","First Fill","Bourbon",20,212.3,105,63,26,19060.19,89.78,254.48,12.72,953.01
+"2025-01-06","Copper House","England","England","64.8",74.78,"115.4","Operational","Barrel",NA,"Bourbon",13,164.86,105,63,26,1030.28,6.25,13.78,1.06,79.25
+"2025-01-06","Copper House","England","England","64.29",111.59,"173.58","Operational",NA,NA,NA,9,247.97,105,63,26,1030.28,4.15,9.23,1.03,114.48
+"2024-12-02","Copper House","England","England","64.29",111.59,"173.58","Operational",NA,NA,NA,9,247.97,132,70,45,257.19,1.04,2.3,0.26,28.58
+"2024-12-02","Bruichladdich","Islay","Scotland","53.1",115.3,"217.14","Operational","Hogshead",NA,"Wine",NA,310.2,132,70,45,22118.36,71.3,191.83,NA,NA
+"2024-12-02","Tobermory","Islands","Scotland","50.9",72.2,"141.84","Operational","Hogshead",NA,NA,30,202.63,132,70,45,23147.12,114.23,320.6,10.69,771.57
+"2024-12-02","Laphroaig","Islay","Scotland","56.8",167.56,"295","Operational","Butt",NA,NA,26,421.43,132,70,45,61725.66,146.47,368.38,14.17,2374.06
+"2024-12-02","Copper House","England","England","64.8",74.78,"115.4","Operational","Barrel",NA,"Bourbon",13,164.86,132,70,45,1028.76,6.24,13.76,1.06,79.14
+"2024-10-07","Laphroaig","Islay","Scotland","56.8",167.56,"295","Operational","Butt",NA,NA,26,421.43,124,67,37,93000,220.68,555.03,21.35,3576.92
+"2024-10-07","Dailuaine","Speyside","Scotland","59.3",125.73,"212.02","Operational","Hogshead","Second Fill","Bourbon",15,302.89,124,67,37,3587.73,11.84,28.54,1.9,239.18
+"2024-10-07","Dailuaine","Islay","Scotland","61",122,"200","Operational","Hogshead","Second Fill","Bourbon",8,285.71,124,67,37,1808.33,6.33,14.82,1.85,226.04
+"2024-10-07","Port Dundas","Lowlands","Scotland","63.8",135.57,"212.5","Closed","Hogshead",NA,"Bourbon",14,303.57,124,67,37,2170,7.15,16.01,1.14,155
+"2024-10-07","Glenrothes","Speyside","Scotland","66.8",160.9,"240.87","Operational","Hogshead","Second Fill","Bourbon",8,344.1,124,67,37,3255,9.46,20.23,2.53,406.88
+"2024-10-07","Bruichladdich","Islay","Scotland","60.6",83.9,"138.45","Operational","Barrel","First Fill","Bourbon",19,197.79,124,67,37,14983.33,75.75,178.59,9.4,788.6
+"2024-09-09","Jura","Islands","Scotland","57.52",75.6,"131.43","Operational","Hogshead",NA,NA,15,187.76,100,45,25,7796.2,41.52,103.12,6.87,519.75
+"2024-09-09","Ardmore","Highlands","Scotland","50.9",74.75,"146.85","Operational","Hogshead",NA,NA,26,209.79,100,45,25,15592.4,74.32,208.59,8.02,599.71
+"2024-09-09","Heaven Hill Bernheim","Kentucky, USA","USA","66.4",105.11,"158.3","Operational","Barrel",NA,"Bourbon",NA,226.14,100,45,25,9459.39,41.83,90,NA,NA
+"2024-09-09","Heaven Hill Bernheim","Kentucky, USA","USA","65.6",96.96,"147.8","Operational","Barrel",NA,"Bourbon",NA,211.14,100,45,25,9147.54,43.32,94.34,NA,NA
+"2024-09-09","Heaven Hill Bernheim","Kentucky, USA","USA","62.5",103.44,"165.5","Operational","Barrel",NA,"Bourbon",NA,236.43,100,45,25,9147.54,38.69,88.43,NA,NA
+"2024-09-09","Bruichladdich","Islay","Scotland","53.1",115.3,"217.14","Operational","Hogshead",NA,"Wine",NA,310.2,100,45,25,18191.13,58.64,157.77,NA,NA
+"2024-08-05","Bruichladdich","Islay","Scotland","51",76.5,"150","Operational","Barrel","Second Fill","Bourbon",20,214.29,98,38,25,27527.1,128.46,359.83,17.99,1376.36
+"2024-08-05","Laphroaig","Islay","Scotland","49.1",144.84,"295","Operational","Butt",NA,NA,26,421.43,98,38,25,103871.93,246.47,717.15,27.58,3995.07
+"2024-07-08","Lochranza","Islands","Scotland","49.1",81.56,"166.1","Operational","Hogshead",NA,NA,27,237.29,97,42,30,21894.62,92.27,268.45,9.94,810.91
+"2024-06-10","Longmorn","Speyside","Scotland","62.7",106.59,"170","Operational","Hogshead",NA,NA,NA,242.86,84,62,20,6969.8,28.7,65.39,NA,NA
+"2024-06-10","Longmorn","Speyside","Scotland","61.8",101.48,"164.2","Operational","Hogshead",NA,NA,NA,234.57,84,62,20,6761.74,28.83,66.63,NA,NA
+"2024-06-10","Jura","Islands","Scotland","57.52",75.7,"131.6","Operational","Hogshead",NA,NA,15,188,84,62,20,6345.64,33.75,83.83,5.59,423.04
+"2024-06-10","Jura","Islands","Scotland","57.92",85.08,"146.9","Operational","Hogshead",NA,NA,15,209.86,84,62,20,6241.61,29.74,73.36,4.89,416.11
+"2024-06-10","See Lot Description","Islands","Scotland","63.8",143.7,"225.23","Operational","Hogshead",NA,NA,15,321.76,84,62,20,6137.58,19.08,42.71,2.85,409.17
+"2024-06-10","See Lot Description","Islands","Scotland","64.5",312.89,"485.1","Operational","Butt","Second Fill",NA,15,693,84,62,20,18204.7,26.27,58.18,3.88,1213.65
+"2024-06-10","Ardmore","Highlands","Scotland","52.2",62.03,"118.83","Operational","Hogshead",NA,NA,26,169.76,84,62,20,13003.36,76.6,209.63,8.06,500.13
+"2024-06-10","Fettercairn","Highlands","Scotland","55.4",65.58,"118.38","Operational","Hogshead",NA,NA,27,169.11,84,62,20,16644.3,98.42,253.8,9.4,616.46
+"2024-06-10","Glen Garioch","Highlands","Scotland","56.4",89.6,"158.86","Operational",NA,NA,NA,10,226.94,84,62,20,2704.7,11.92,30.19,3.02,270.47
+"2024-06-10","Glenrothes","Speyside","Scotland","66.9",149.09,"222.86","Operational","Hogshead","Second Fill",NA,7,318.37,84,62,20,1404.36,4.41,9.42,1.35,200.62
+"2024-06-10","Glenrothes","Speyside","Scotland","67.9",151.4,"222.97","Operational","Hogshead","Second Fill",NA,7,318.53,84,62,20,1404.36,4.41,9.28,1.33,200.62
+"2024-05-06","Bruichladdich","Islay","Scotland","60.9",87.4,"143.51","Operational","Barrel","First Fill","Bourbon",18,205.01,77,59,13,13543.69,66.06,154.96,8.61,752.43
+"2024-04-08","Borders","Lowlands","Scotland","63.5",56.52,"89","Operational","Quarter Cask",NA,NA,NA,127.14,78,57,12,1566.37,12.32,27.71,NA,NA
+"2024-04-08","Bruichladdich","Islay","Scotland","60.9",87.4,"143.51","Operational","Barrel","First Fill","Bourbon",18,205.01,78,57,12,15674.16,76.46,179.34,9.96,870.79
+"2024-04-08","Ardmore","Highlands","Scotland","52.3",77.57,"148.32","Operational","Hogshead",NA,NA,25,211.89,78,57,12,20898.88,98.63,269.42,10.78,835.96
+"2024-04-08","Bruichladdich","Islay","Scotland","46.7",86,"184.15","Operational","Barrel","First Fill","Bourbon",38,263.07,78,57,12,67921.35,258.19,789.78,20.78,1787.4
+"2024-01-08","Bruichladdich","Highlands","Scotland","54.4",152.51,"280.35","Operational","Barrel","Second Fill",NA,20,400.5,75,55,45,6365.02,15.89,41.74,2.09,318.25
+"2024-01-08","Jura","Islands","Scotland","47.9",71.37,"149","Operational","Hogshead",NA,NA,35,212.86,75,55,45,26520.91,124.59,371.6,10.62,757.74
+"2024-01-08","Fettercairn","Highlands","Scotland","54.8",79.05,"144.25","Operational","Barrel","First Fill","Sherry",15,206.07,75,55,45,5834.6,28.31,73.81,4.92,388.97
+"2024-01-08","Tullibardine","Highlands","Scotland","57.9",33.3,"57.51","Operational","Octave","First Fill","Wine",NA,82.16,75,55,45,1273,15.49,38.23,NA,NA
+"2024-01-08","Bruichladdich","Islay","Scotland","59.9",96,"160.27","Operational","Barrel","First Fill","Bourbon",15,228.96,75,55,45,20686.31,90.35,215.48,14.37,1379.09
+"2023-12-05","Allt-A-Bhainne","Hogshead","Hogshead","63",131.32,"208.44","Operational","Hogshead",NA,NA,14,297.77,41,22,13,13717.85,46.07,104.46,7.46,979.85
+"2023-12-05","Tomatin","Highlands","Scotland","61.6",71.82,"116.59","Operational","Quarter Cask","First Fill",NA,15,166.56,41,22,13,8441.75,50.68,117.54,7.84,562.78
+"2023-12-05","Tullibardine","Highlands","Scotland","58.8",47.03,"79.98","Operational","Quarter Cask","First Fill","Wine",NA,114.26,41,22,13,3587.75,31.4,76.29,NA,NA
+"2023-12-05","Bruichladdich","Highlands","Scotland","54.4",152.51,"280.35","Operational","Barrel","Second Fill",NA,20,400.5,41,22,13,11607.41,28.98,76.11,3.81,580.37
+"2023-12-05","Aberlour","Speyside","Scotland","41.3",40,"96.85","Operational","Hogshead",NA,NA,32,138.36,41,22,13,15300.68,110.59,382.52,11.95,478.15
+"2023-12-05","Tullibardine","Highlands","Scotland","58.6",28.01,"47.8","Operational","Octave",NA,NA,8,68.29,41,22,13,1371.79,20.09,48.98,6.12,171.47
+"2023-11-06","Bruichladdich","Islay","Scotland","59.6",242.3,"406.54","Operational","Butt",NA,"Sherry",21,580.77,37,18,14,58257.4,100.31,240.43,11.45,2774.16
+"2023-11-06","Bruichladdich","Islay","Scotland","56.7",52.2,"92.06","Operational","Barrel","First Fill","Bourbon",16,131.51,37,18,14,11015.95,83.77,211.03,13.19,688.5
+"2023-09-04","Bruichladdich","Islay","Scotland","56.7",52.2,"92.06","Operational","Barrel","First Fill","Bourbon",16,131.51,37,26,9,9934.09,75.54,190.31,11.89,620.88
+"2023-08-07","Glen Moray","Speyside","Scotland","51.94",48.98,"94.3","Operational",NA,NA,NA,14,134.71,32,21,4,4462.3,33.13,91.1,6.51,318.74
+"2023-08-07","Royal Brackla","Highlands","Scotland","61.5",58.76,"95.55","Operational",NA,NA,NA,14,136.5,32,21,4,6480.96,47.48,110.3,7.88,462.93
+"2023-08-07","Ben Nevis","Highlands","Scotland","56.5",73.85,"130.71","Operational",NA,NA,NA,10,186.73,32,21,4,6480.96,34.71,87.76,8.78,648.1
+"2023-07-10","Bruichladdich","Islay","Scotland","60.8",77.2,"126.97","Operational","Barrel","First Fill","Bourbon",17,181.39,35,20,11,21313.98,117.5,276.09,16.24,1253.76
+"2023-07-10","Benrinnes","Speyside","Scotland","57.6",107.1,"185.94","Operational","Hogshead",NA,NA,8,265.63,35,20,11,9591.29,36.11,89.55,11.19,1198.91
+"2023-04-10","Ardmore","Highlands","Scotland","61.8",89.54,"144.88","Operational",NA,NA,NA,13,206.97,47,15,9,6953.6,33.6,77.66,5.97,534.89
+"2023-04-10","Balmenach","Speyside","Scotland","62.1",96.14,"154.82","Operational","Barrel",NA,NA,7,221.17,47,15,9,2246.55,10.16,23.37,3.34,320.94
+"2023-04-10","Glen Elgin","Speyside","Scotland","60.2",133.07,"221.05","Operational","Hogshead",NA,NA,8,315.79,47,15,9,3316.33,10.5,24.92,3.12,414.54
+"2023-04-10","Bruichladdich","Islands","Scotland","65.3",317.66,"486.47","Operational","Butt",NA,NA,14,694.96,47,15,9,26744.63,38.48,84.19,6.01,1910.33
+"2023-04-10","Bruichladdich","Islay","Scotland","66.7",131,"196.4","Operational","Hogshead",NA,NA,9,280.57,47,15,9,18186.35,64.82,138.83,15.43,2020.71
+"2023-03-06","Glen Ord","Highlands","Scotland","61.2",102.67,"167.76","Operational",NA,NA,"Bourbon",10,239.66,52,11,2,8333.2,34.77,81.16,8.12,833.32
+"2023-03-06","Craigellachie","Speyside","Scotland","53.5",98.26,"183.66","Operational","Quarter Cask",NA,NA,15,262.37,52,11,2,7691.44,29.32,78.28,5.22,512.76
+"2023-03-06","Tullibardine","Highlands","Scotland","60.8",35.82,"58.91","Operational","Octave",NA,"Wine",8,84.16,52,11,2,1731.57,20.57,48.34,6.04,216.45
+"2023-03-06","Aultmore","Speyside","Scotland","63.4",76.52,"120.7","Operational","Barrel",NA,NA,10,172.43,52,11,2,3679.6,21.34,48.09,4.81,367.96
+"2023-01-09","Bruichladdich","Islay","Scotland","60.8",80.32,"132.11","Operational","Hogshead","First Fill","Bourbon",14,188.73,71,15,6,28142.8,149.12,350.38,25.03,2010.2
+"2022-10-10","Strathmill","Speyside","Scotland","58.5",60.67,"103.71","Operational","Quarter Cask","First Fill","Sherry",13,148.16,95,32,9,3868.86,26.11,63.77,4.91,297.6
+"2022-09-05","Glen Garioch","Highlands","Scotland","63.5",NA,NA,"Operational","Barrel",NA,"Bourbon",10,NA,100,41,10,7098.95,NA,NA,NA,709.9
+"2022-09-05","See Lot Description","Islands","Scotland","63.6",299.8,"471.38","Operational","Butt","Second Fill",NA,13,673.4,100,41,10,24339.26,36.14,81.18,6.24,1872.25
+"2022-09-05","Jura","Islands","Scotland","42.6",43.59,"102.32","Operational","Hogshead",NA,NA,30,146.17,100,41,10,22874.39,156.49,524.76,17.49,762.48
+"2022-08-08","Aultmore","Speyside","Scotland","63.4",76.52,"120.7","Operational","Barrel",NA,NA,10,172.43,114,55,16,4532.9,26.29,59.24,5.92,453.29
+"2022-07-04","Bruichladdich","Islay","Scotland","57.2",96.8,"169.23","Operational","Hogshead",NA,"Sherry",20,241.76,110,56,23,46120.41,190.77,476.45,23.82,2306.02
+"2022-07-04","Craigellachie","Speyside","Scotland","54.31",55.5,"102.2","Operational","Quarter Cask",NA,NA,14,146,110,56,23,9110.2,62.4,164.15,11.72,650.73
+"2022-07-04","Craigellachie","Speyside","Scotland","54.05",55.56,"102.8","Operational","Quarter Cask",NA,"Sherry",14,146.86,110,56,23,5010.61,34.12,90.18,6.44,357.9
+"2022-06-06","Ardbeg","Islay","Scotland","51.9",81.2,"156.45","Operational","Hogshead","Second Fill","Bourbon",28,223.5,108,55,31,234790.64,1050.52,2891.51,103.27,8385.38
+"2022-06-06","Craigellachie","Speyside","Scotland","59.55",113.14,"190","Operational","Barrique",NA,NA,10,271.43,108,55,31,13743.84,50.63,121.48,12.15,1374.38
+"2022-06-06","Macallan","Speyside","Scotland","40.7",45.99,"113","Operational","Hogshead",NA,"Bourbon",33,161.43,108,55,31,105942.12,656.27,2303.59,69.81,3210.37
+"2022-05-02","Tullibardine","Highlands","Scotland","61",100.04,"164","Operational",NA,"Second Fill","Bourbon",7,234.29,106,64,39,2078.64,8.87,20.78,2.97,296.95
+"2022-05-02","Tullibardine","Highlands","Scotland","60.9",92.57,"152","Operational",NA,"Second Fill","Bourbon",7,217.14,106,64,39,2020.9,9.31,21.83,3.12,288.7
+"2022-05-02","Glentauchers","Speyside","Scotland","61.3",84.47,"137.8","Operational","Hogshead",NA,NA,14,196.86,106,64,39,7852.65,39.89,92.96,6.64,560.9
+"2022-05-02","Springbank","Campbeltown","Scotland","51.8",42.6,"82.24","Operational",NA,"First Fill","Rum",25,117.49,106,64,39,49656.46,422.64,1165.64,46.63,1986.26
+"2022-05-02","Fettercairn","Highlands","Scotland","56.6",83,"146.64","Operational","Barrique","First Fill","Sherry",13,209.49,106,64,39,11548.01,55.12,139.13,10.7,888.31
+"2022-05-02","Tormore","Speyside","Scotland","64.3",74,"115.09","Operational","Quarter Cask",NA,NA,8,164.41,106,64,39,2713.78,16.51,36.67,4.58,339.22
+"2022-04-04","Glen Spey","Speyside","Scotland","60.4",62,"102.65","Operational","Quarter Cask",NA,"Sherry",12,146.64,97,63,33,3487.5,23.78,56.25,4.69,290.62
+"2022-04-04","Tullibardine","Highlands","Scotland","61",100.04,"164","Operational",NA,"Second Fill","Bourbon",7,234.29,97,63,33,1278.75,5.46,12.78,1.83,182.68
+"2022-04-04","Tullibardine","Highlands","Scotland","60.9",92.57,"152","Operational",NA,"Second Fill","Bourbon",7,217.14,97,63,33,1278.75,5.89,13.81,1.97,182.68
+"2022-04-04","Invergordon","Highlands","Scotland","47.8",106.44,"222.68","Operational","Hogshead","First Fill","Sherry",34,318.11,97,63,33,14531.25,45.68,136.52,4.02,427.39
+"2022-04-04","Glentauchers","Speyside","Scotland","61.3",84.47,"137.8","Operational","Hogshead",NA,NA,14,196.86,97,63,33,6742.5,34.25,79.82,5.7,481.61
+"2022-04-04","Craigellachie","Speyside","Scotland","65.2",129.56,"198.71","Operational","Barrique","First Fill","Sherry",11,283.87,97,63,33,11625,40.95,89.73,8.16,1056.82
+"2022-04-04","Tullibardine","Highlands","Scotland","58.4",111,"190.07","Operational","Barrique","First Fill","Sherry",10,271.53,97,63,33,6393.75,23.55,57.6,5.76,639.38
+"2022-04-04","Tullibardine","Highlands","Scotland","56.8",66,"116.2","Operational",NA,"First Fill",NA,10,166,97,63,33,3487.5,21.01,52.84,5.28,348.75
+"2022-03-07","Craigellachie","Speyside","Scotland","63.4",66.82,"105.4","Operational","Barrel",NA,NA,9,150.57,92,59,24,5122.54,34.02,76.66,8.52,569.17
+"2022-03-07","Ardmore","Highlands","Scotland","62.4",86.1,"137.98","Operational","Barrel","Second Fill",NA,13,197.11,92,59,24,5241.67,26.59,60.88,4.68,403.21
+"2022-03-07","Bruichladdich","Speyside","Scotland","49.9",105.29,"211","Operational","Hogshead","Second Fill","Sherry",NA,301.43,92,59,24,33356.11,110.66,316.8,NA,NA
+"2022-03-07","Fettercairn","Highlands","Scotland","56.9",85,"149.38","Operational","Barrique","First Fill","Wine",13,213.4,92,59,24,8458.16,39.64,99.51,7.65,650.63
+"2022-03-07","Glen Ord","Highlands","Scotland","59.1",62,"104.91","Operational","Quarter Cask","First Fill",NA,8,149.87,92,59,24,6671.22,44.51,107.6,13.45,833.9
+"2022-03-07","Knockdhu","Highlands","Scotland","58.6",104,"177.47","Operational","Barrique","First Fill","Sherry",8,253.53,92,59,24,6075.58,23.96,58.42,7.3,759.45
+"2022-03-07","Tullibardine","Highlands","Scotland","56.8",64,"112.68","Operational","Quarter Cask",NA,"Madeira",10,160.97,92,59,24,3216.48,19.98,50.26,5.03,321.65
+"2022-03-07","Glen Spey","Speyside","Scotland","60.4",62,"102.65","Operational","Quarter Cask",NA,"Sherry",12,146.64,92,59,24,5956.45,40.62,96.07,8.01,496.37
+"2022-03-07","Tullibardine","Highlands","Scotland","56.8",65.76,"115.77","Operational","Quarter Cask","First Fill","Wine",10,165.39,92,59,24,5360.8,32.41,81.52,8.15,536.08
+"2022-02-07","Craigellachie","Speyside","Scotland","63.4",66.82,"105.4","Operational","Barrel",NA,NA,9,150.57,85,59,25,3734.46,24.8,55.89,6.21,414.94
+"2022-02-07","Ardmore","Highlands","Scotland","62.4",86.1,"137.98","Operational","Barrel","Second Fill",NA,13,197.11,85,59,25,4698.19,23.84,54.57,4.2,361.4
+"2022-02-07","Fettercairn","Highlands","Scotland","56.4",84,"148.94","Operational","Barrique","First Fill",NA,13,212.77,85,59,25,10480.57,49.26,124.77,9.6,806.2
+"2022-02-07","Glen Spey","Speyside","Scotland","60.4",62.3,"103.15","Operational","Quarter Cask","First Fill",NA,12,147.36,85,59,25,5420.98,36.79,87.01,7.25,451.75
+"2022-02-07","Inchgower","Speyside","Scotland","60.3",71.82,"119.11","Operational","Quarter Cask",NA,"Sherry",11,170.16,85,59,25,5420.98,31.86,75.48,6.86,492.82
+"2022-02-07","Knockdhu","Highlands","Scotland","57",50.9,"89.3","Operational","Quarter Cask","First Fill",NA,8,127.57,85,59,25,4216.32,33.05,82.84,10.35,527.04
+"2022-02-07","Tullibardine","Highlands","Scotland","58.3",108.23,"185.64","Operational","Barrique","First Fill","Madeira",9,265.2,85,59,25,5782.38,21.8,53.43,5.94,642.49
+"2022-02-07","Tullibardine","Highlands","Scotland","56.8",65.76,"115.77","Operational","Quarter Cask","First Fill","Wine",9,165.39,85,59,25,3734.46,22.58,56.79,6.31,414.94
+"2022-02-07","Springbank","Campbeltown","Scotland","49.6",38.3,"77.22","Operational",NA,"First Fill","Rum",25,110.31,85,59,25,42765.54,387.69,1116.59,44.66,1710.62
+"2022-01-10","Springbank","Campbeltown","Scotland","47.9",47.04,"98.2","Operational","Hogshead",NA,NA,27,140.29,91,54,30,82558.75,588.49,1755.08,65,3057.73
+"2022-01-10","Dailuaine","Speyside","Scotland","55.2",44.1,"79.89","Operational","Quarter Cask","First Fill",NA,12,114.13,91,54,30,5099.22,44.68,115.63,9.64,424.94
+"2022-01-10","Fettercairn","Highlands","Scotland","54",68,"125.93","Operational","Barrique","First Fill",NA,14,179.9,91,54,30,11169.71,62.09,164.26,11.73,797.84
+"2022-01-10","Knockdhu","Highlands","Scotland","56.4",91.8,"162.77","Operational","Barrique","First Fill","Sherry",9,232.53,91,54,30,7284.6,31.33,79.35,8.82,809.4
+"2022-01-10","Strathmill","Speyside","Scotland","58.5",60.7,"103.76","Operational","Quarter Cask","First Fill","Sherry",13,148.23,91,54,30,9834.2,66.34,162.01,12.46,756.48
+"2021-12-06","Aultmore","Speyside","Scotland","63.4",79.76,"125.8","Operational","Barrel",NA,NA,9,179.71,96,53,35,3999.57,22.26,50.15,5.57,444.4
+"2021-12-06","Glen Spey","Speyside","Scotland","56.7",70.7,"124.69","Operational","Quarter Cask","First Fill",NA,11,178.13,96,53,35,4484.36,25.17,63.43,5.77,407.67
+"2021-12-06","Tullibardine","Highlands","Scotland","62",110.3,"177.9","Operational","Barrel",NA,NA,6,254.14,96,53,35,2060.38,8.11,18.68,3.11,343.4
+"2021-11-08","Benriach","Speyside","Scotland","63.4",NA,NA,"Operational","Hogshead",NA,NA,7,NA,99,42,34,5482.53,NA,NA,NA,783.22
+"2021-11-08","Aultmore","Speyside","Scotland","63.4",NA,NA,"Operational","Barrel",NA,NA,9,NA,99,42,34,5117.03,NA,NA,NA,568.56
+"2021-11-08","Craigellachie","Speyside","Scotland","66.3",77.19,"116.43","Operational","Quarter Cask","First Fill","Sherry",11,166.33,99,42,34,6579.04,39.55,85.23,7.75,598.09
+"2021-11-08","Arran (Lochranza)","Islands","Scotland","54.7",75.54,"138.1","Operational","Hogshead",NA,"Sherry",25,197.29,99,42,34,40205.24,203.79,532.24,21.29,1608.21
+"2021-11-08","Bunnahabhain","Islay","Scotland","53.2",108.05,"203.1","Operational","Hogshead",NA,NA,13,290.14,99,42,34,16447.6,56.69,152.22,11.71,1265.2
+"2021-11-08","Glentauchers","Speyside","Scotland","60.8",121.36,"199.6","Operational","Hogshead",NA,NA,12,285.14,99,42,34,7431.88,26.06,61.24,5.1,619.32
+"2021-11-08","Glenrothes","Speyside","Scotland","64.3",88.86,"138.2","Operational","Hogshead",NA,NA,11,197.43,99,42,34,6176.99,31.29,69.51,6.32,561.54
+"2021-11-08","Glen Garioch","Highlands","Scotland","53.9",113.57,"210.7","Operational","Hogshead",NA,NA,13,301,99,42,34,6822.71,22.67,60.07,4.62,524.82
+"2021-11-08","Glen Moray","Speyside","Scotland","57.7",100.17,"173.6","Operational","Hogshead",NA,NA,14,248,99,42,34,7553.71,30.46,75.41,5.39,539.55
+"2021-11-08","Bruichladdich","Islay","Scotland","66.8",112.22,"168","Operational","Barrel","First Fill","Bourbon",9,240,99,42,34,21930.13,91.38,195.42,21.71,2436.68
+"2021-11-08","Tullibardine","Highlands","Scotland","62.2",116.1,"186.66","Operational","Barrel",NA,NA,6,266.66,99,42,34,3655.02,13.71,31.48,5.25,609.17
+"2021-11-08","Fettercairn","Highlands","Scotland","57.4",94.1,"163.94","Operational","Barrel",NA,"Bourbon",13,234.2,99,42,34,9868.56,42.14,104.87,8.07,759.12
+"2021-10-04","Benriach","Speyside","Scotland","63.4",94.53,"149.1","Operational","Hogshead",NA,NA,7,213,99,34,24,6017.17,28.25,63.65,9.09,859.6
+"2021-10-04","Aultmore","Speyside","Scotland","63.4",79.38,"125.2","Operational","Barrel",NA,NA,9,178.86,99,34,24,4175.18,23.34,52.6,5.84,463.91
+"2021-10-04","Craigellachie","Speyside","Scotland","63.4",81.47,"128.5","Operational","Barrel",NA,NA,8,183.57,99,34,24,5525.97,30.1,67.83,8.48,690.75
+"2021-10-04","Bunnahabhain","Islay","Scotland","67.3",154.12,"229","Operational","Hogshead",NA,"Sherry",10,327.14,99,34,24,22717.87,69.44,147.4,14.74,2271.79
+"2021-10-04","Crolly","Ireland","Ireland",NA,NA,"200","Operational",NA,NA,"Bourbon",NA,285.71,99,34,24,7367.96,25.79,NA,NA,NA
+"2021-10-04","Bladnoch","Lowlands","Scotland","63.4",NA,NA,"Operational","Barrel",NA,"Bourbon",NA,NA,99,34,24,6078.57,NA,NA,NA,NA
+"2021-10-04","Ardmore","Highlands","Scotland","60.6",93.4,"154.13","Operational","Barrel",NA,NA,12,220.19,99,34,24,7613.56,34.58,81.52,6.79,634.46
+"2021-10-04","Glenlossie","Speyside","Scotland","63.3",63.3,"100","Operational","Quarter Cask","First Fill","Sherry",8,142.86,99,34,24,5648.77,39.54,89.24,11.15,706.1
+"2021-10-04","Royal Brackla","Highlands","Scotland","60.4",114,"188.74","Operational","Hogshead",NA,NA,12,269.63,99,34,24,10683.54,39.62,93.72,7.81,890.3
+"2021-09-06","Benriach","Speyside","Scotland","63.4",103.03,"162.5","Operational","Hogshead",NA,NA,7,232.14,98,33,18,4964.41,21.39,48.18,6.88,709.2
+"2021-09-06","Aultmore","Speyside","Scotland","63.4",76.52,"120.7","Operational","Barrel",NA,NA,9,172.43,98,33,18,5088.52,29.51,66.5,7.39,565.39
+"2021-09-06","Craigellachie","Speyside","Scotland","63.4",66.82,"105.4","Operational","Barrel",NA,NA,8,150.57,98,33,18,5088.52,33.8,76.15,9.52,636.07
+"2021-09-06","Craigellachie","Speyside","Scotland","66.3",77.19,"116.43","Operational","Quarter Cask","First Fill","Sherry",11,166.33,98,33,18,7198.4,43.28,93.26,8.48,654.4
+"2021-09-06","Inchgower","Speyside","Scotland","59.3",70.63,"119.11","Operational","Quarter Cask","First Fill",NA,12,170.16,98,33,18,5709.07,33.55,80.83,6.74,475.76
+"2021-09-06","Teaninich","Highlands","Scotland","59.4",58.86,"99.09","Operational","Quarter Cask","First Fill","Sherry",11,141.56,98,33,18,5584.96,39.45,94.89,8.63,507.72
+"2021-08-09","Ardmore","Highlands","Scotland","62.4",86.1,"137.98","Operational","Barrel","Second Fill",NA,12,197.11,91,26,8,6159.9,31.25,71.54,5.96,513.32
+"2021-08-09","Blair Athol","Highlands","Scotland","58.8",75.38,"128.2","Operational","Barrel",NA,"Rum",7,183.14,91,26,8,5475.47,29.9,72.64,10.38,782.21
+"2021-08-09","Craigellachie","Speyside","Scotland","63.9",280.78,"439.4","Operational","Butt",NA,"Sherry",14,627.71,91,26,8,24888.49,39.65,88.64,6.33,1777.75
+"2021-08-09","Bunnahabhain","Islay","Scotland","67.3",154.12,"229","Operational","Hogshead",NA,"Sherry",10,327.14,91,26,8,19910.79,60.86,129.19,12.92,1991.08
+"2021-08-09","Port Dundas","Lowlands","Scotland","63.8",135.57,"212.5","Closed","Hogshead",NA,"Bourbon",12,303.57,91,26,8,3733.27,12.3,27.54,2.29,311.11
+"2021-08-09","Caol Ila","Islay","Scotland","60.2",96.08,"159.6","Operational","Hogshead","First Fill","Sherry",13,228,91,26,8,20534.25,90.06,213.72,16.44,1579.56
+"2021-06-07","Port Dundas","Lowlands","Scotland","63.9",140.04,"219.15","Closed","Hogshead",NA,"Bourbon",12,313.07,97,43,15,4261.46,13.61,30.43,2.54,355.12
+"2021-05-10","Dalmunach","Speyside","Scotland","67.2",73.62,"109.55","Operational","Barrel",NA,NA,4,156.5,95,57,18,4281.94,27.36,58.16,14.54,1070.48
+"2021-05-10","Bruichladdich","Islay","Scotland","63.6",132.29,"208","Operational","Hogshead",NA,"Wine",9,297.14,95,57,18,19640.79,66.1,148.47,16.5,2182.31
+"2021-04-05","Tomatin","Highlands","Scotland","54.3",62.76,"115.58","Operational","Hogshead",NA,NA,35,165.11,95,65,27,65885.56,399.04,1049.8,29.99,1882.44
+"2021-04-05","Arran (Lochranza)","Islands","Scotland","51.3",108.09,"210.7","Operational","Hogshead","First Fill","Sherry",25,301,95,65,27,51314.71,170.48,474.74,18.99,2052.59
+"2021-03-08","Glen Elgin","Speyside","Scotland","62.01",270.98,"437","Operational","Butt",NA,"Sherry",8,624.29,95,65,28,21677.33,34.72,80,10,2709.67
+"2021-03-08","Glenglassaugh","Highlands","Scotland","59.7",26.51,"44.4","Operational","Octave","First Fill","Sherry",5,63.43,95,65,28,2295.25,36.19,86.58,17.32,459.05
+"2021-02-08","Dalmunach","Speyside","Scotland","67.3",129.22,"192.01","Operational","Barrel",NA,NA,4,274.3,90,65,39,4986.71,18.18,38.59,9.65,1246.68
+"2021-02-08","Glenglassaugh","Highlands","Scotland","59.7",26.51,"44.4","Operational","Octave","First Fill","Sherry",5,63.43,90,65,39,3324.47,52.41,125.4,25.08,664.89
+"2021-02-08","Glenglassaugh","Highlands","Scotland","59.7",26.51,"44.4","Operational","Octave","First Fill","Sherry",5,63.43,90,65,39,2813.02,44.35,106.11,21.22,562.6
+"2021-02-08","Ardmore","Highlands","Scotland","57.6",28.92,"50.21","Operational","Octave","First Fill","Sherry",13,71.73,90,65,39,3324.47,46.35,114.95,8.84,255.73
+"2021-01-11","Tullibardine","Highlands","Scotland","66.6",30.22,"45.37","Operational","Octave","First Fill","Sherry",5,64.81,79,61,38,2048.99,31.62,67.8,13.56,409.8
+"2021-01-11","Tullibardine","Highlands","Scotland","66.6",29.48,"44.26","Operational","Octave","First Fill","Sherry",5,63.23,79,61,38,1990.11,31.47,67.51,13.5,398.02
+"2021-01-11","Aultmore","Speyside","Scotland","60.2",32.45,"53.9","Operational","Octave",NA,"Sherry",10,77,79,61,38,3807.45,49.45,117.33,11.73,380.74
+"2021-01-11","Tobermory","Islands","Scotland","53.1",90.27,"170","Operational","Hogshead",NA,NA,25,242.86,79,61,38,22396.79,92.22,248.11,9.92,895.87
+"2020-12-07","Tullibardine","Highlands","Scotland","69.7",36.66,"52.6","Operational","Octave","First Fill","Sherry",2,75.14,74,54,37,1596.84,21.25,43.56,21.78,798.42
+"2020-12-07","Glenrothes","Speyside","Scotland","66",138.45,"209.78","Operational","Hogshead",NA,"Sherry",5,299.69,74,54,37,5620.88,18.76,40.6,8.12,1124.18
+"2020-12-07","Bunnahabhain","Islay","Scotland","66.1",148.79,"225.1","Operational","Hogshead",NA,"Sherry",10,321.57,74,54,37,19802.1,61.58,133.09,13.31,1980.21
+"2020-11-09","Port Dundas","Lowlands","Scotland","63",141.03,"223.85","Closed","Hogshead",NA,"Bourbon",11,319.79,56,38,26,4611.57,14.42,32.7,2.97,419.23
+"2020-11-09","Glen Moray","Speyside","Scotland","61.2",72.09,"117.79","Operational","Barrel",NA,"Bourbon",5,168.27,56,38,26,3458.68,20.55,47.98,9.6,691.74
+"2020-11-09","Tullibardine","Highlands","Scotland","69.7",36.66,"52.6","Operational","Octave","First Fill","Sherry",2,75.14,56,38,26,2049.59,27.28,55.91,27.95,1024.8
+"2020-11-09","Glen Moray","Speyside","Scotland","59.6",88.21,"148","Operational","Barrel",NA,NA,11,211.43,56,38,26,6661.16,31.51,75.51,6.86,605.56
+"2020-11-09","Glentauchers","Speyside","Scotland","59.8",100.05,"167.3","Operational","Barrel",NA,"Bourbon",11,239,56,38,26,6276.86,26.26,62.74,5.7,570.62
+"2020-11-09","Tobermory","Islands","Scotland","59.9",120.24,"200.74","Operational","Hogshead",NA,NA,NA,286.77,56,38,26,17293.39,60.3,143.82,NA,NA
+"2020-11-09","Bruichladdich","Islay","Scotland","61.1",105.09,"172","Operational","Barrel","First Fill","Bourbon",10,245.71,56,38,26,16652.89,67.77,158.46,15.85,1665.29
+"2020-11-09","Bruichladdich","Islay","Scotland","60.5",99.22,"164","Operational","Barrel","First Fill","Bourbon",10,234.29,56,38,26,16012.4,68.34,161.38,16.14,1601.24
+"2020-11-09","Royal Brackla","Highlands","Scotland","61.2",111.54,"182.25","Operational","Hogshead",NA,NA,13,260.36,56,38,26,6276.86,24.11,56.27,4.33,482.84
+"2020-10-05","North British","Lowlands","Scotland","59.9",122.99,"205.32","Operational","Hogshead",NA,"Bourbon",13,293.31,46,30,23,3452.34,11.77,28.07,2.16,265.56
+"2020-10-05","Bruichladdich","Islay","Scotland","62.9",109.45,"174","Operational","Barrel","First Fill","Bourbon",10,248.57,46,30,23,14066.36,56.59,128.52,12.85,1406.64
+"2020-09-07","North British","Lowlands","Scotland","61.8",129.46,"209.49","Operational","Hogshead",NA,"Bourbon",13,299.27,42,30,17,6457.15,21.58,49.88,3.84,496.7
+"2020-08-03","Glenrothes","Speyside","Scotland","64.8",138.49,"213.72","Operational","Hogshead",NA,"Sherry",11,305.31,34,25,12,10790.06,35.34,77.91,7.08,980.91
+"2020-08-03","Springbank","Campbeltown","Scotland","50.2",57.73,"115","Operational",NA,"First Fill","Sherry",29,164.29,34,25,12,64997.24,395.63,1125.88,38.82,2241.28
+"2020-07-06","North British","Lowlands","Scotland","61.5",72.22,"117.43","Operational","Barrel",NA,"Bourbon",13,167.76,28,18,7,4475.25,26.68,61.97,4.77,344.25
+"2020-07-06","Port Dundas","Lowlands","Scotland","64.2",143.37,"223.31","Closed","Hogshead",NA,"Bourbon",11,319.01,28,18,7,6393.22,20.04,44.59,4.05,581.2
+"2020-06-01","Bruichladdich","Islay","Scotland","63.7",110.2,"173","Operational","Barrel","First Fill","Bourbon",8,247.14,28,20,13,10533.15,42.62,95.58,11.95,1316.64
+"2020-04-06","Bruichladdich","Islay","Scotland","59.3",64.64,"109","Operational","Barrel","First Fill","Bourbon",16,155.71,27,16,11,10285.71,66.06,159.12,9.95,642.86
+"2020-03-11","Glentauchers","Speyside","Scotland","59.9",95.24,"159","Operational","Barrel",NA,"Bourbon",11,227.14,20,12,7,5266.57,23.19,55.3,5.03,478.78
+"2020-03-11","Glentauchers","Speyside","Scotland","60.8",193.34,"318","Operational","Barrel",NA,"Bourbon",11,454.29,20,12,7,4624.31,10.18,23.92,2.17,420.39
+"2020-03-11","Port Dundas","Lowlands","Scotland","65.5",138.53,"211.5","Closed","Hogshead",NA,"Port",11,302.14,20,12,7,5716.16,18.92,41.26,3.75,519.65
+"2020-03-11","Bruichladdich","Islay","Scotland","63.1",101.59,"161","Operational","Barrel","First Fill","Bourbon",13,230,20,12,7,14129.83,61.43,139.09,10.7,1086.91
+"2020-03-11","Lindores Abbey","Lowlands","Scotland",NA,NA,"300","Operational","Hogshead",NA,"Wine",NA,428.57,20,12,7,6936.46,16.19,NA,NA,NA
+"2020-02-03","Bruichladdich","Islay","Scotland","62.1",120.47,"194","Operational","Hogshead",NA,"Wine",11,277.14,18,9,5,15414.36,55.62,127.95,11.63,1401.31
+"2020-02-03","Bruichladdich","Islay","Scotland","63.1",101.59,"161","Operational","Barrel","First Fill","Bourbon",13,230,18,9,5,13487.57,58.64,132.76,10.21,1037.51
+"2020-01-06","Bruichladdich","Islay","Scotland","63.1",101.59,"161","Operational","Barrel","First Fill","Bourbon",13,230,18,10,5,14182.07,61.66,139.6,10.74,1090.93
+"2019-12-02","Bruichladdich","Islay","Scotland","61.2",94.86,"155","Operational","Barrel","First Fill","Bourbon",14,221.43,19,8,5,15428.57,69.68,162.65,11.62,1102.04
+"2019-12-02","Bruichladdich","Islay","Scotland","58.1",70.77,"121.81","Operational","Barrel","First Fill","Bourbon",16,174.01,19,8,5,12857.14,73.89,181.68,11.35,803.57
+"2019-09-02","Longmorn","Speyside","Scotland","58.2",106.22,"182.5","Operational","Barrel","Second Fill",NA,10,260.71,21,8,3,7714.29,29.59,72.63,7.26,771.43
+"2019-09-02","Ben Nevis","Highlands","Scotland","49.5",83.8,"169.29","Operational","Hogshead",NA,NA,23,241.84,21,8,3,12857.14,53.16,153.43,6.67,559.01
+"2019-09-02","Bruichladdich","Islay","Scotland","63.6",107.48,"169","Operational","Barrel","First Fill","Bourbon",7,241.43,21,8,3,12863.57,53.28,119.68,17.1,1837.65
+"2019-05-06","Tullibardine","Highlands","Scotland","58.5",90.5,"152.7","Operational","Barrel","First Fill","Bourbon",11,218.14,25,8,2,5171.46,23.71,57.14,5.19,470.13
+"2019-04-08","Tullibardine","Highlands","Scotland","58.5",90.5,"152.7","Operational","Barrel","First Fill","Bourbon",11,218.14,25,10,2,4667.29,21.4,51.57,4.69,424.3
+"2019-01-07","Speyside","Highlands","Scotland","53",78.44,"148","Operational","Hogshead",NA,NA,23,211.43,30,18,8,7873.94,37.24,100.38,4.36,342.35
+"2018-12-03","Glasgow","Lowlands","Scotland","61.43",26.58,"43.27","Operational","Quarter Cask",NA,"Sherry",3,61.81,26,15,7,2018.91,32.66,75.96,25.32,672.97
+"2018-11-05","Macallan","Speyside","Scotland","47.8",76,"159","Operational","Hogshead",NA,NA,28,227.14,29,17,6,106254.67,467.79,1398.09,49.93,3794.81
+"2018-10-08","Ben Nevis","Highlands","Scotland","57.2",237.77,"415.59","Operational","Butt",NA,NA,21,593.7,29,15,10,26148.08,44.04,109.97,5.24,1245.15
+"2018-07-02","Dufftown","Speyside","Scotland","59.9",120.4,"201","Operational","Barrel",NA,"Rum",10,287.14,24,12,5,3428.17,11.94,28.47,2.85,342.82
+"2018-07-02","Glenburgie","Speyside","Scotland","60.1",109.98,"183","Operational","Barrel",NA,"Bourbon",5,261.43,24,12,5,3296.31,12.61,29.97,5.99,659.26
+"2018-07-02","Ben Nevis","Highlands","Scotland","57.2",230.76,"398.65","Operational",NA,NA,"Wine",21,569.5,24,12,5,23074.2,40.52,99.99,4.76,1098.77
+"2018-07-02","Glen Moray","Speyside","Scotland","49.26",58.13,"118","Operational","Hogshead",NA,NA,37,168.57,24,12,5,30326.09,179.9,521.69,14.1,819.62
+"2018-06-04","Glen Moray","Speyside","Scotland","49.26",58.13,"118","Operational","Hogshead",NA,NA,37,168.57,24,11,4,33622.4,199.46,578.4,15.63,908.71
+"2018-05-07","Bruichladdich","Islay","Scotland","64.1",128.84,"201","Operational","Barrique",NA,"Wine",14,287.14,22,12,2,16943.05,59.01,131.5,9.39,1210.22
+"2018-05-07","Ben Nevis","Highlands","Scotland","57.2",230.76,"398.65","Operational",NA,NA,"Wine",21,569.5,22,12,2,26370.51,46.3,114.28,5.44,1255.74
+"2018-04-02","Ben Nevis","Highlands","Scotland","57.2",230.76,"398.65","Operational","Butt",NA,"Sherry",21,569.5,21,14,7,60167.65,105.65,260.74,12.42,2865.13
+"2017-07-03","Ardmore","Highlands","Scotland",NA,NA,NA,"Operational",NA,NA,"Bourbon",7,NA,2,2,2,2027.62,NA,NA,NA,289.66
+"2017-06-05","Linkwood","Speyside","Scotland",NA,NA,NA,"Operational","Hogshead","Second Fill",NA,7,NA,1,1,1,2970.96,NA,NA,NA,424.42
+"2017-05-08","Bruichladdich",NA,NA,NA,NA,NA,"Operational","Hogshead",NA,NA,6,NA,0,0,0,10938.53,NA,NA,NA,1823.09
+"2025-03-10","Lochranza","Islands","Scotland","57.3",116.15,"202.7","Operational","Hogshead","First Fill","Sherry",NA,289.57,129,84,39,6234.07,21.53,53.67,NA,NA
+"2025-03-10","Copper House","England","England","68.06",92.03,"135.22","Operational",NA,"Virgin Oak","Virgin Oak",8,193.17,129,84,39,357.69,1.85,3.89,0.49,44.71
+"2025-03-10","Copper House","England","England","65.32",110.3,"168.86","Operational",NA,"Virgin Oak","Virgin Oak",8,241.23,129,84,39,357.69,1.48,3.24,0.41,44.71
+"2025-03-10","Dublin Liberties Distillery","Ireland","Ireland","62.2",96.32,"154.85","Operational","Barrel",NA,"Bourbon",NA,221.21,129,84,39,357.69,1.62,3.71,NA,NA
+"2025-03-10","Dublin Liberties Distillery","Ireland","Ireland","59.01",104.9,"177.77","Operational","Barrel",NA,"Bourbon",NA,253.96,129,84,39,357.69,1.41,3.41,NA,NA
+"2025-03-10","Dublin Liberties Distillery","Ireland","Ireland","60.1",105.8,"176.04","Operational","Barrel",NA,"Bourbon",NA,251.49,129,84,39,357.69,1.42,3.38,NA,NA
+"2025-03-10","Dublin Liberties Distillery","Ireland","Ireland","60.19",96.38,"160.12","Operational","Barrel",NA,"Bourbon",NA,228.74,129,84,39,357.69,1.56,3.71,NA,NA
+"2025-03-10","Bruichladdich","Islay","Scotland","60.4",124,"205.3","Operational","Hogshead",NA,"Wine",NA,293.29,129,84,39,10730.77,36.59,86.54,NA,NA
+"2025-02-10","Bruichladdich","Islay","Scotland","60.4",124,"205.3","Operational","Hogshead",NA,"Wine",NA,293.29,125,87,44,13334.56,45.47,107.54,NA,NA
+"2023-04-24","Springbank","Campbeltown","Scotland","43.9",64.84,"147.7","Operational","Hogshead","First Fill","Sherry",26.88,211,47,15,9,93873.66,444.9,1447.77,53.86,3492.32
+"2023-11-21","Ben Nevis","Highlands","Scotland","57",179.93,"315.67","Operational","Butt",NA,NA,25.14,450.96,37,18,14,63553.53,140.93,353.21,14.05,2527.98
+"2022-07-11","Ben Nevis","Highlands","Scotland","50",75,"150","Operational","Hogshead","Second Fill",NA,26.17,214.29,110,56,23,39572.45,184.67,527.63,20.16,1512.13
+"2023-05-23","Dalmore","Highlands","Scotland","55.9",83.68,"149.7","Operational","Barrel",NA,NA,17.55,213.86,44,19,17,33998.48,158.98,406.29,23.15,1937.24
+"2024-05-14","Port Charlotte","Islay","Scotland","55.9",140.31,"251","Operational","Hogshead","Second Fill","Sherry",19.64,358.57,77,59,13,30473.3,84.99,217.19,11.06,1551.59
+"2023-10-24","Speyside","Speyside","Scotland","59.2",194.18,"328","Operational","Butt",NA,NA,28.17,468.57,36,21,10,28534.09,60.9,146.95,5.22,1012.92
+"2022-10-03","Bruichladdich","Islay","Scotland","61.4",121.57,"198","Operational",NA,NA,"Wine",10.25,282.86,95,32,9,26805.67,94.77,220.5,21.51,2615.19
+"2023-06-20","Bruichladdich","Islay","Scotland","57.1",122.76,"215","Operational","Hogshead",NA,"Wine",12.77,307.14,38,19,17,24929.66,81.17,203.08,15.9,1952.21
+"2024-06-12","Speyside","Speyside","Scotland","62.2",217.7,"350","Operational","Butt",NA,NA,28.56,500,84,62,20,21065.44,42.13,96.76,3.39,737.59
+"2024-05-14","Bruichladdich","Islay","Scotland","59.7",149.25,"250","Operational","Hogshead","Second Fill","Sherry",19.47,357.14,77,59,13,18231.89,51.05,122.16,6.27,936.41
+"2023-11-21","Bruichladdich","Islay","Scotland","60.7",91.05,"150","Operational","Barrel","First Fill","Bourbon",17.44,214.29,37,18,14,18271.64,85.27,200.68,11.51,1047.69
+"2024-07-09","Rhinns","Islay","Scotland","58.7",104.49,"178","Operational","Hogshead",NA,NA,12.74,254.29,97,42,30,17984.87,70.73,172.12,13.51,1411.69
+"2021-11-15","Bruichladdich","Islay","Scotland","56.5",88.14,"156","Operational","Barrel","First Fill","Bourbon",16.47,222.86,99,42,34,20711.79,92.94,234.99,14.27,1257.55
+"2020-10-19","Bruichladdich","Islay","Scotland","57.3",110.59,"193","Operational","Hogshead","Second Fill",NA,18.26,275.71,46,30,23,21097.62,76.52,190.77,10.45,1155.4
+"2024-01-01","Bruichladdich","Islay","Scotland","62.9",113.22,"180","Operational","Barrel","First Fill","Bourbon",12.93,257.14,75,55,45,16973.38,66.01,149.92,11.59,1312.71
+"2023-11-21","Bruichladdich","Islay","Scotland","62.9",89.95,"143","Operational","Barrel","First Fill","Bourbon",16.42,204.29,37,18,14,15093.96,73.88,167.8,10.22,919.24
+"2024-05-14","Bruichladdich","Islay","Scotland","56.1",74.05,"132","Operational","Barrel","First Fill","Bourbon",18.91,188.57,77,59,13,12501.87,66.3,168.83,8.93,661.12
+"2019-12-16","Tobermory","Islands","Scotland","51.7",89.44,"173","Operational","Hogshead",NA,NA,24.07,247.14,19,8,5,14464.29,58.53,161.72,6.72,600.93
+"2024-05-14","Bruichladdich","Islay","Scotland","68.7",121.6,"177","Operational","Barrel","First Fill","Bourbon",12.65,252.86,77,59,13,10418.22,41.2,85.68,6.77,823.57
+"2023-03-27","Dingle","Ireland","Ireland","61.7",98.72,"160","Operational","Barrel",NA,"Bourbon",8.99,228.57,52,11,2,10497.67,45.93,106.34,11.83,1167.71
+"2020-03-08","Bruichladdich","Islay","Scotland","63.9",113.1,"177","Operational",NA,"First Fill","Bourbon",11.07,252.86,20,12,7,12331.49,48.77,109.03,9.85,1113.96
+"2020-02-09","Tobermory","Islands","Scotland","53.5",90.42,"169","Operational","Hogshead",NA,NA,24.16,241.43,18,9,5,11175.41,46.29,123.59,5.12,462.56
+"2020-08-10","Caol Ila","Islay","Scotland","59.3",131.6,"221.92","Operational","Hogshead",NA,NA,11.83,317.03,34,25,12,11046.96,34.85,83.94,7.1,933.81
+"2022-10-31","Staoisha","Islay",NA,"59.5",93.42,"157","Operational","Barrel",NA,NA,9.06,224.29,95,32,9,9174.72,40.91,98.21,10.84,1012.66
+"2020-10-20","Glenfarclas","Speyside","Scotland","58.9",98.4,"167.06","Operational","Barrel","First Fill","Bourbon",8.91,238.66,46,30,23,9589.83,40.18,97.46,10.94,1076.3
+"2020-12-14","Tamdhu","Speyside","Scotland","60.7",306.18,"504.41","Operational","Butt",NA,NA,6.11,720.59,74,54,37,9453.3,13.12,30.87,5.05,1547.18
+"2020-08-11","Craigellachie","Speyside","Scotland","61.6",314.98,"511.33","Operational",NA,"Second Fill","Sherry",6.25,730.47,34,25,12,8991.71,12.31,28.55,4.57,1438.67
+"2020-10-19","Craigellachie","Speyside","Scotland","61.6",314.98,"511.33","Operational",NA,"Second Fill","Sherry",6.44,730.47,46,30,23,8950.5,12.25,28.42,4.41,1389.83
+"2020-08-10","Craigellachie","Speyside","Scotland","59.3",119.79,"202","Operational","Hogshead",NA,NA,12.68,288.57,34,25,12,8349.45,28.93,69.7,5.5,658.47
+"2020-11-17","Glenfarclas","Speyside","Scotland","58.9",98.4,"167.06","Operational","Barrel","First Fill","Bourbon",8.99,238.66,56,38,26,8326.45,34.89,84.62,9.41,926.19
+"2020-10-20","Glenrothes","Speyside","Scotland","66.3",205.53,"310","Operational","Hogshead","Second Fill",NA,7.72,442.86,46,30,23,8055.45,18.19,39.19,5.08,1043.45
+"2020-09-15","Craigellachie","Speyside","Scotland","61.6",314.98,"511.33","Operational",NA,"Second Fill","Sherry",6.35,730.47,42,30,17,7671.86,10.5,24.36,3.84,1208.17
+"2020-12-15","Heaven Hill","USA","USA","66.3",116.69,"176","Operational","Barrel",NA,"Bourbon",11.95,251.43,74,54,37,7664.84,30.48,65.69,5.5,641.41
+"2020-11-17","Tamdhu","Speyside","Scotland","60.7",306.18,"504.41","Operational","Butt",NA,NA,6.04,720.59,56,38,26,7301.65,10.13,23.85,3.95,1208.88
+"2020-11-17","Glenrothes","Speyside","Scotland","66.3",205.53,"310","Operational","Hogshead","Second Fill",NA,7.79,442.86,56,38,26,6404.96,14.46,31.16,4,822.2
+"2020-11-16","Tomatin","Highlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,56,38,26,5892.56,20.62,46.4,NA,NA
+"2020-12-14","Glenrothes","Speyside","Scotland","66.3",205.53,"310","Operational","Hogshead","Second Fill",NA,7.87,442.86,74,54,37,5684.75,12.84,27.66,3.51,722.33
+"2020-08-10","Speyside","Speyside","Scotland","50.8",39.62,"78","Operational","Hogshead",NA,NA,26.49,111.43,34,25,12,5523.48,49.57,139.41,5.26,208.51
+"2020-07-13","Glenallachie","Speyside","Scotland","65.5",61.74,"94.26","Operational","Barrel",NA,"Bourbon",4.93,134.66,28,18,7,5306.37,39.41,85.95,17.43,1076.34
+"2023-12-14","Adnams","England","England","70.23",117.41,"167.18","Operational","Barrique","First Fill",NA,NA,238.83,41,22,13,4326.4,18.11,36.85,NA,NA
+"2023-12-14","Adnams","England","England","70.1",118.37,"168.86","Operational","Barrique","First Fill",NA,NA,241.23,41,22,13,4326.4,17.93,36.55,NA,NA
+"2020-12-14","Glen Garioch","Highlands","Scotland","59",101.4,"171.86","Operational",NA,NA,NA,9.2,245.51,74,54,37,5173.76,21.07,51.02,5.55,562.37
+"2020-11-16","Glenrothes","Speyside","Scotland","68",147.97,"217.6","Operational","Hogshead","Second Fill",NA,6.52,310.86,56,38,26,5123.97,16.48,34.63,5.31,785.88
+"2024-11-26","Adnams","England","England","70.23",117.41,"167.18","Operational","Barrique","First Fill",NA,NA,238.83,127,68,43,4130.27,17.29,35.18,NA,NA
+"2024-11-26","Adnams","England","England","70.39",105.32,"149.63","Operational","Barrique","First Fill",NA,NA,213.76,127,68,43,4130.27,19.32,39.22,NA,NA
+"2024-11-26","Adnams","England","England","71.26",96.76,"135.79","Operational","Barrique","First Fill",NA,NA,193.99,127,68,43,4130.27,21.29,42.69,NA,NA
+"2024-11-26","Adnams","England","England","70.1",118.37,"168.86","Operational","Barrique","First Fill",NA,NA,241.23,127,68,43,4130.27,17.12,34.89,NA,NA
+"2024-11-26","Adnams","England","England","64",118.4,"185","Operational",NA,"First Fill","Sherry",NA,264.29,127,68,43,4130.27,15.63,34.88,NA,NA
+"2020-12-14","Glenallachie","Speyside","Scotland","65.2",121.5,"186.35","Operational","Barrel",NA,"Bourbon",5.35,266.21,74,54,37,4982.14,18.72,41.01,7.66,931.24
+"2020-08-11","Glenallachie","Speyside","Scotland","65.2",121.5,"186.35","Operational","Barrel",NA,"Bourbon",5,266.21,34,25,12,4945.44,18.58,40.7,8.14,989.09
+"2023-12-14","Adnams","England","England","69.59",120.25,"172.8","Operational","Barrique","First Fill",NA,NA,246.86,41,22,13,3957.07,16.03,32.91,NA,NA
+"2020-09-15","Glenallachie","Speyside","Scotland","65.2",121.5,"186.35","Operational","Barrel",NA,"Bourbon",5.1,266.21,42,30,17,4730.98,17.77,38.94,7.63,927.64
+"2020-10-20","Benriach","Speyside","Scotland","65.5",153.48,"234.32","Operational","Hogshead",NA,NA,6.3,334.74,46,30,23,4730.98,14.13,30.82,4.89,750.95
+"2024-09-03","Adnams","England","England","64",118.4,"185","Operational",NA,"First Fill","Sherry",NA,264.29,100,45,25,3846.13,14.55,32.48,NA,NA
+"2020-11-17","Glenallachie","Speyside","Scotland","65.2",121.5,"186.35","Operational","Barrel",NA,"Bourbon",5.27,266.21,56,38,26,4483.47,16.84,36.9,7,850.75
+"2025-01-02","Adnams","England","England","70.23",117.41,"167.18","Operational","Barrique","First Fill",NA,NA,238.83,105,63,26,3605.98,15.1,30.71,NA,NA
+"2025-01-02","Adnams","England","England","70.39",105.32,"149.63","Operational","Barrique","First Fill",NA,NA,213.76,105,63,26,3605.98,16.87,34.24,NA,NA
+"2025-01-02","Adnams","England","England","71.26",96.76,"135.79","Operational","Barrique","First Fill",NA,NA,193.99,105,63,26,3605.98,18.59,37.27,NA,NA
+"2025-01-21","Adnams","England","England","70.23",117.41,"167.18","Operational","Barrique","First Fill",NA,NA,238.83,105,63,26,3605.98,15.1,30.71,NA,NA
+"2025-01-21","Adnams","England","England","70.39",105.32,"149.63","Operational","Barrique","First Fill",NA,NA,213.76,105,63,26,3605.98,16.87,34.24,NA,NA
+"2025-01-21","Adnams","England","England","71.26",96.76,"135.79","Operational","Barrique","First Fill",NA,NA,193.99,105,63,26,3605.98,18.59,37.27,NA,NA
+"2025-02-18","Adnams","England","England","70.23",117.41,"167.18","Operational","Barrique","First Fill",NA,NA,238.83,125,87,44,3590.07,15.03,30.58,NA,NA
+"2025-02-18","Adnams","England","England","70.39",105.32,"149.63","Operational","Barrique","First Fill",NA,NA,213.76,125,87,44,3590.07,16.79,34.09,NA,NA
+"2025-02-18","Adnams","England","England","71.26",96.76,"135.79","Operational","Barrique","First Fill",NA,NA,193.99,125,87,44,3590.07,18.51,37.1,NA,NA
+"2020-11-17","Glen Garioch","Highlands","Scotland","59",101.4,"171.86","Operational",NA,NA,NA,9.12,245.51,56,38,26,4163.22,16.96,41.06,4.5,456.49
+"2023-12-14","Adnams","England","England","70.79",115.8,"163.58","Operational","Barrique","First Fill",NA,NA,233.69,41,22,13,3429.46,14.68,29.62,NA,NA
+"2020-09-14","Glen Moray","Speyside","Scotland","62",99.97,"161.25","Operational","Barrel",NA,NA,5.28,230.36,42,30,17,4027.73,17.48,40.29,7.63,762.83
+"2023-12-14","Adnams","England","England","69.98",119.51,"170.78","Operational","Barrique","First Fill",NA,NA,243.97,41,22,13,3323.94,13.62,27.81,NA,NA
+"2022-11-28","Glen Moray","Speyside","Scotland","60.6",87.87,"145",NA,"Barrel",NA,NA,7.49,207.14,89,25,9,3358.13,16.21,38.22,5.1,448.35
+"2023-12-14","Adnams","England","England","70.52",115.19,"163.35","Operational","Barrique","First Fill",NA,NA,233.36,41,22,13,3218.42,13.79,27.94,NA,NA
+"2023-12-14","Adnams","England","England","70.66",112,"158.51","Operational","Barrique","First Fill",NA,NA,226.44,41,22,13,3218.42,14.21,28.74,NA,NA
+"2023-12-14","Adnams","England","England","70.39",105.32,"149.63","Operational","Barrique","First Fill",NA,NA,213.76,41,22,13,3218.42,15.06,30.56,NA,NA
+"2023-12-14","Adnams","England","England","70.32",114,"162.11","Operational","Barrique","First Fill",NA,NA,231.59,41,22,13,3218.42,13.9,28.23,NA,NA
+"2024-09-03","Adnams","England","England","64.7",113.22,"175","Operational","Barrique",NA,NA,NA,250,100,45,25,3170.45,12.68,28,NA,NA
+"2023-12-14","Adnams","England","England","70.39",119.26,"169.43","Operational","Barrique","First Fill",NA,NA,242.04,41,22,13,3165.66,13.08,26.54,NA,NA
+"2023-12-14","Adnams","England","England","70.27",117.63,"167.4","Operational","Barrique","First Fill",NA,NA,239.14,41,22,13,3165.66,13.24,26.91,NA,NA
+"2024-08-06","Adnams","England","England","64",118.4,"185","Operational",NA,"First Fill","Sherry",NA,264.29,98,38,25,3116.16,11.79,26.32,NA,NA
+"2024-08-06","Adnams","England","England","65",120.25,"185","Operational",NA,"First Fill","Port",NA,264.29,98,38,25,3116.16,11.79,25.91,NA,NA
+"2024-08-06","Adnams","England","England","64.4",115.92,"180","Operational",NA,"First Fill","Port",NA,257.14,98,38,25,3116.16,12.12,26.88,NA,NA
+"2024-09-03","Adnams","England","England","65",120.25,"185","Operational",NA,"First Fill","Port",NA,264.29,100,45,25,3118.48,11.8,25.93,NA,NA
+"2024-09-03","Adnams","England","England","64.4",115.92,"180","Operational",NA,"First Fill","Port",NA,257.14,100,45,25,3118.48,12.13,26.9,NA,NA
+"2024-11-26","Adnams","England","England","64.29",113.7,"176.85","Operational",NA,NA,NA,NA,252.64,127,68,43,3097.71,12.26,27.24,NA,NA
+"2023-12-14","Adnams","England","England","71.26",96.76,"135.79","Operational","Barrique","First Fill",NA,NA,193.99,41,22,13,3060.14,15.77,31.63,NA,NA
+"2023-12-14","Adnams","England","England","66.51",121.81,"183.15","Operational","Barrel","First Fill","Bourbon",NA,261.64,41,22,13,2954.61,11.29,24.26,NA,NA
+"2023-12-14","Adnams","England","England","67.56",117.51,"173.93","Operational","Barrel","First Fill","Bourbon",NA,248.47,41,22,13,2901.85,11.68,24.69,NA,NA
+"2023-12-14","Adnams","England","England","67.42",117.11,"173.7","Operational","Barrel","First Fill","Bourbon",NA,248.14,41,22,13,2901.85,11.69,24.78,NA,NA
+"2020-10-20","Glenallachie","Speyside","Scotland","65.2",121.5,"186.35","Operational","Barrel",NA,"Bourbon",5.2,266.21,46,30,23,3388.41,12.73,27.89,5.36,651.62
+"2023-12-14","Adnams","England","England","66.74",102.58,"153.7","Operational","Barrel","First Fill","Bourbon",NA,219.57,41,22,13,2743.57,12.5,26.75,NA,NA
+"2023-12-14","Adnams","England","England","65.52",96.58,"147.4","Operational","Barrel","First Fill","Bourbon",NA,210.57,41,22,13,2638.05,12.53,27.31,NA,NA
+"2023-12-14","Adnams","England","England","67.89",98.51,"145.1","Operational","Barrel","First Fill","Bourbon",NA,207.29,41,22,13,2638.05,12.73,26.78,NA,NA
+"2023-12-14","Adnams","England","England","67.07",100.27,"149.5","Operational","Barrel","First Fill","Bourbon",NA,213.57,41,22,13,2638.05,12.35,26.31,NA,NA
+"2023-12-14","Adnams","England","England","66.54",100.54,"151.1","Operational","Barrel","First Fill","Bourbon",NA,215.86,41,22,13,2638.05,12.22,26.24,NA,NA
+"2024-10-29","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,124,67,37,2583.33,9.04,20.34,NA,NA
+"2024-10-29","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,124,67,37,2583.33,9.04,20.34,NA,NA
+"2024-11-26","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,127,68,43,2581.42,9.04,20.33,NA,NA
+"2024-11-26","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,127,68,43,2581.42,9.04,20.33,NA,NA
+"2024-11-26","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,127,68,43,2581.42,9.04,20.33,NA,NA
+"2025-01-02","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,105,63,26,2575.7,9.02,20.28,NA,NA
+"2025-01-02","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,105,63,26,2575.7,9.02,20.28,NA,NA
+"2025-01-02","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,105,63,26,2575.7,9.02,20.28,NA,NA
+"2025-01-02","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,105,63,26,2575.7,9.02,20.28,NA,NA
+"2025-01-02","Annandale","Lowlands","Scotland","63.5",127,"200","Operational","Barrel","First Fill","Bourbon",NA,285.71,105,63,26,2575.7,9.02,20.28,NA,NA
+"2025-01-02","Adnams","England","England","61.1",79.43,"130","Operational","Barrel","First Fill","Bourbon",NA,185.71,105,63,26,2575.7,13.87,32.43,NA,NA
+"2025-01-02","Adnams","England","England","63.5",82.55,"130","Operational","Barrel","First Fill","Bourbon",NA,185.71,105,63,26,2575.7,13.87,31.2,NA,NA
+"2025-01-02","Adnams","England","England","62.3",80.99,"130","Operational","Barrel","First Fill","Bourbon",NA,185.71,105,63,26,2575.7,13.87,31.8,NA,NA
+"2025-01-02","Adnams","England","England","62.1",80.73,"130","Operational","Barrel","First Fill","Bourbon",NA,185.71,105,63,26,2575.7,13.87,31.91,NA,NA
+"2025-01-02","Adnams","England","England","63.2",75.84,"120","Operational","Barrel","First Fill","Bourbon",NA,171.43,105,63,26,2575.7,15.02,33.96,NA,NA
+"2025-01-02","Adnams","England","England","64.7",97.05,"150","Operational",NA,"First Fill",NA,NA,214.29,105,63,26,2575.7,12.02,26.54,NA,NA
+"2025-01-02","Adnams","England","England","65.2",104.32,"160","Operational",NA,"First Fill",NA,NA,228.57,105,63,26,2575.7,11.27,24.69,NA,NA
+"2025-01-02","Adnams","England","England","62.4",109.2,"175","Operational",NA,"First Fill",NA,NA,250,105,63,26,2575.7,10.3,23.59,NA,NA
+"2025-01-02","Adnams","England","England","62.3",105.91,"170","Operational",NA,"First Fill",NA,NA,242.86,105,63,26,2575.7,10.61,24.32,NA,NA
+"2025-01-02","Adnams","England","England","61.9",92.85,"150","Operational",NA,"First Fill",NA,NA,214.29,105,63,26,2575.7,12.02,27.74,NA,NA
+"2023-12-14","Adnams","England","England","67.2",92.06,"137","Operational","Barrel","First Fill","Bourbon",NA,195.71,41,22,13,2427,12.4,26.36,NA,NA
+"2023-12-14","Adnams","England","England","67.3",90.99,"135.2","Operational","Barrel","First Fill","Bourbon",NA,193.14,41,22,13,2427,12.57,26.67,NA,NA
+"2023-12-14","Adnams","England","England","66.39",81.86,"123.3","Operational","Barrel","First Fill","Bourbon",NA,176.14,41,22,13,2321.48,13.18,28.36,NA,NA
+"2024-08-06","Adnams","England","England","64.7",113.22,"175","Operational","Barrique",NA,NA,NA,250,98,38,25,2077.44,8.31,18.35,NA,NA
+"2024-08-06","Adnams","England","England","68.1",115.77,"170","Operational","Barrique",NA,NA,NA,242.86,98,38,25,2077.44,8.55,17.94,NA,NA
+"2023-12-14","Adnams","England","England","66.41",69.53,"104.7","Operational","Barrel","First Fill","Bourbon",NA,149.57,41,22,13,2004.92,13.4,28.84,NA,NA
+"2023-12-14","Adnams","England","England","70.2",55.95,"79.7","Operational","Barrel","First Fill","Bourbon",NA,113.86,41,22,13,1688.35,14.83,30.18,NA,NA
+"2023-12-14","Adnams","England","England","68.85",54.07,"78.53","Operational","Barrel","First Fill","Bourbon",NA,112.19,41,22,13,1582.83,14.11,29.27,NA,NA
+"2019-07-30","Macallan","Speyside","Scotland","42.9",77.9299,"181.5976","Operational","Hogshead","Second Fill","",29.57,259.425142857143,26,8,6,91793.33,353.83,1177.9,39.83,3104.27
+"2024-09-30","Springbank","Campbeltown","Scotland","43.8",61.6,"140.3","Operational","Hogshead","Second Fill","Sherry",30.75,200.428571428571,100,45,25,72764.53,363.04,1181.24,38.41,2366.33
+"2025-06-16","Springbank","Campbeltown","Scotland","43.3",57.9,"131.8","Operational","Hogshead","First Fill","Bourbon",25.46,188.285714285714,131,61,22,35151.19,186.69,607.1,23.85,1380.64
+"2023-12-31","Ben Nevis","Highlands","Scotland","55",79.02,"143.39","Operational","Hogshead","","",27.16,204.842857142857,41,22,13,26486.01,129.3,335.18,12.34,975.18
+"2024-03-31","Ben Nevis","Highlands","Scotland","55.1",71.64,"129.76","Operational","Hogshead","","",27.41,185.371428571429,81,55,42,25172.93,135.8,351.38,12.82,918.38
+"2025-04-21","Ben Nevis","Highlands","Scotland","49.6",80.1,"159.73","Operational","Hogshead","","",29.06,228.185714285714,134,67,41,22459.3,98.43,280.39,9.65,772.86
+"2020-09-30","Ben Nevis","Highlands","Scotland","56.1",89.27,"159.29","Operational","Hogshead","","",24.75,227.557142857143,42,30,17,26730.04,117.47,299.43,12.1,1080
+"2020-09-30","Ben Nevis","Highlands","Scotland","56.4",106.43,"188.9","Operational","Hogshead","Second Fill","Sherry",23.75,269.857142857143,42,30,17,22504.12,83.39,211.45,8.9,947.54
+"2022-02-28","Bruichladdich","Islay","Scotland","63.8",93.79,"147","Operational","Barrel","First Fill","Bourbon",10.16,210,85,59,25,16865.28,80.31,179.82,17.7,1659.97
+"2018-07-31","Dalmore","Highlands","Scotland","58.9",116.7,"198.13","Operational","Hogshead","Second Fill","",10.47,283.042857142857,24,12,5,15822.31,55.9,135.58,12.95,1511.2
+"2021-06-30","Auchroisk","Speyside","Scotland","58.9",127.07,"215.75","Operational","Hogshead","","",12.7,308.214285714286,97,43,15,7206.87,23.38,56.72,4.47,567.47
+"2025-05-19","Arran","Highlands","Scotland","58.6",134,"226","Operational","Hogshead","First Fill","Sherry",12.21,322.857142857143,134,66,22,5342.12,16.55,39.87,3.27,437.52
+"2024-07-31","Ardnamurchan","Highlands","Scotland","61.6",101.76,"165.2","Operational","Barrel","","",7.4,236,97,42,30,3753.36,15.9,36.88,4.98,507.21
+"2024-06-30","Ardnamurchan","Highlands","Scotland","61.6",101.76,"165.2","Operational","Barrel","","",7.32,236,84,62,20,3744.97,15.87,36.8,5.03,511.61
+"2024-04-29","Longmorn","Speyside","Scotland","54.8",92.6,"168.98","Operational","Barrel","","Bourbon",13.71,241.4,78,57,12,11494.38,47.62,124.13,9.05,838.39
+"2024-04-01","Longmorn","Speyside","Scotland","57.4",102.3,"178.22","Operational","Barrel","","Bourbon",13.64,254.6,78,57,12,9926.97,38.99,97.04,7.11,727.78
+"2024-02-05","Longmorn","Speyside","Scotland","55.6",97.8,"175.9","Operational","Barrel","","Bourbon",13.48,251.29,81,60,46,9489.8,37.76,97.03,7.2,703.99
+"2023-12-04","Longmorn","Speyside","Scotland","55.6",88.3,"158.81","Operational","Barrel","","Bourbon",13.59,226.87,41,22,13,9391.45,41.4,106.36,7.83,691.06
+"2025-04-04","Tamnavulin","Speyside","Scotland","58.5",105.8,"180.85","Operational","Barrel","","",11.57,258.36,134,67,41,4441.39,17.19,41.98,3.63,383.87
+"2024-09-02","Dalmunach","Speyside","Scotland","59.2",102.9,"173.82","Operational","Barrel","First Fill","Bourbon",7.22,248.31,100,45,25,4261.92,17.16,41.42,5.74,590.29
+"2024-12-13","Dalmunach","Speyside","Scotland","59.2",102.9,"173.82","Operational","Barrel","First Fill","Bourbon",7.5,248.31,132,70,45,4012.17,16.16,38.99,5.2,534.96
+"2025-04-04","Tamnavulin","Speyside","Scotland","58.5",105.8,"180.85","Operational","Barrel","","",11.57,258.36,134,67,41,3734.8,14.46,35.3,3.05,322.8
+"2024-11-04","Dalmunach","Speyside","Scotland","58.5",105.8,"180.85","Operational","Barrel","First Fill","Bourbon",7.39,258.36,127,68,43,3613.99,13.99,34.16,4.62,489.04
+"2024-12-13","Dalmunach","Speyside","Scotland","58.5",105.8,"180.85","Operational","Barrel","First Fill","Bourbon",7.5,258.36,132,70,45,3292.04,12.74,31.12,4.15,438.94
+"2025-01-06","Deanston","Highlands","Scotland","65",158.29,"243.52","Operational","Hogshead","Second Fill","",2.53,347.89,105,63,26,2060.56,5.92,13.02,5.15,814.45
+"2025-05-11","Tullibardine","Highlands","Scotland","65",130.4,"200.62","Operational","Hogshead","","Wine",5.97,286.6,134,66,22,2015.9,7.03,15.46,2.59,337.67
+"2025-06-02","Tullibardine","Highlands","Scotland","69.4",109,"157.06","Operational","Barrel","","",7.24,224.37,131,61,22,1531.59,6.83,14.05,1.94,211.55
+"2025-03-03","Ardmore","Highlands","Scotland",NA,NA,NA,"Operational","Barrel","Second Fill","",1.8,NA,129,84,39,1226.37,NA,NA,NA,681.32
+"2023-04-18","Arran","Islands","Scotland","51.4",87,"168.3","Operational","Hogshead","","",24.85,240.43,47,15,9,21930.6,91.21,252.08,10.14,882.52
+"2017-11-29","Arran","Highlands","Scotland","42.7",42.7,"130","Operational","Hogshead",NA,NA,20.91,185.71,10,10,5,5467.97,29.44,128.06,6.12,261.5
+"2018-07-04","Ben Nevis","Highlands","Scotland","55.7",55.7,"278.22","Operational","Butt","Second Fill",NA,21.7,397.46,24,12,5,17140.83,43.13,307.73,14.18,789.9
+"2018-07-04","Ben Nevis","Highlands","Scotland","55.5",55.5,"329.5","Operational","Butt","Second Fill",NA,21.7,470.71,24,12,5,17140.83,36.41,308.84,14.23,789.9
+"2024-05-29","Ben Nevis","Highlands","Scotland","48.9",48.9,"138.325","Operational",NA,NA,NA,28.17,197.61,77,59,13,21565.72,109.13,441.02,15.66,765.56
+"2021-03-24","Bonnington","Lowlands","Scotland","37.37",71,"190","Operational","Barrel",NA,"Bourbon",1,271.43,95,65,28,2550.27,9.4,35.92,35.92,2550.27
+"2021-03-24","Bonnington","Lowlands","Scotland","63.7",63.7,"222","Operational","Hogshead",NA,"Wine",0.65,317.14,95,65,28,2550.27,8.04,40.04,61.59,3923.49
+"2022-04-27","Bruichladdich","Islay","Scotland","60.4",82.1,"135","Operational","Barrel",NA,"Bourbon",17.32,192.86,97,63,33,19646.25,101.87,239.3,13.82,1134.31
+"2018-05-02","Bruichladdich","Islay","Scotland","42.6",42.6,"77.4","Operational","Hogshead",NA,NA,24.99,110.57,22,12,2,9361.53,84.67,219.75,8.79,374.61
+"2024-08-07","Bruichladdich","Islay","Scotland","57.3",57.3,"145","Operational",NA,NA,NA,21.24,207.14,98,38,25,12672.38,61.18,221.16,10.41,596.63
+"2025-01-08","Bruichladdich","Islay","Scotland","61.1",61.1,"149","Operational",NA,NA,NA,18.02,212.86,105,63,26,16381.46,76.96,268.11,14.88,909.07
+"2025-02-19","Bruichladdich","Islay","Scotland","59.3",59.3,"142","Operational",NA,NA,NA,20.64,202.86,125,87,44,11488.24,56.63,193.73,9.39,556.6
+"2017-08-02","Bruichladdich","Islay","Scotland","53.9",53.9,"162","Operational","Barrel","First Fill","Bourbon",13.59,231.43,5,5,5,12498.55,54.01,231.88,17.06,919.69
+"2020-11-04","Girvan","Lowlands","Scotland","57.9",57.9,"107.9","Operational","Barrel","Virgin Oak",NA,30.84,154.14,56,38,26,3330.58,21.61,57.52,1.87,108
+"2025-04-02","Glentauchers","Speyside","Scotland","60.4",60.4,"197.25","Operational",NA,NA,NA,16.71,281.79,134,67,41,4037.63,14.33,66.85,4,241.63
+"2025-11-12","Hinch","Ireland","Ireland","61.3",61.3,"191.7","Operational",NA,NA,NA,NA,273.86,78,12,1,1000,3.65,16.31,NA,NA
+"2018-01-03","Jura","Highlands","Scotland","49.6",49.6,"138.39","Operational","Hogshead",NA,NA,26.01,197.7,14,12,7,14831.9,75.02,299.03,11.5,570.24
+"2018-01-03","Jura","Highlands","Scotland","47.4",47.4,"120.46","Operational","Hogshead",NA,NA,26.01,172.09,14,12,7,10422.41,60.56,219.88,8.45,400.71
+"2018-01-03","Jura","Highlands","Scotland","47.1",47.1,"121.02","Operational","Hogshead",NA,NA,26.01,172.89,14,12,7,10288.79,59.51,218.45,8.4,395.57
+"2018-01-03","Jura","Highlands","Scotland","32.8",32.8,"45.22","Operational","Hogshead",NA,NA,26.01,64.6,14,12,7,768.32,11.89,23.42,0.9,29.54
+"2017-10-04","Littlemill","Lowlands","Scotland","50",50,"85","Operational","Barrel",NA,"Bourbon",27.76,121.43,7,7,5,41635.8,342.88,832.72,30,1499.85
+"2018-12-05","Macallan","Speyside","Scotland","48.44",48.44,"145.9","Operational","Hogshead","Third Fill",NA,28.75,208.43,26,15,7,64474.79,309.34,1331.02,46.3,2242.6
+"2017-07-05","Macallan","Speyside","Scotland","55.6",55.6,"142","Operational","Hogshead","Second Fill",NA,24.51,202.86,2,2,2,75562.5,372.49,1359.04,55.45,3082.93
+"2018-09-05","Macallan","Speyside","Scotland","42.4",42.4,"132","Operational","Hogshead","Second Fill",NA,29.5,188.57,27,12,8,91865.85,487.17,2166.65,73.45,3114.1
+"2018-10-26","Macallan","Speyside","Scotland","49.84",49.84,"149.7","Operational","Hogshead","Third Fill",NA,29.37,213.86,29,15,10,117797.09,550.81,2363.51,80.47,4010.8
+"2017-11-01","Macallan","Speyside","Scotland","60",60,"165.33","Operational","Hogshead","Second Fill",NA,22.83,236.19,10,10,5,69483.27,294.18,1158.05,50.73,3043.51
+"2018-01-03","Macallan","Speyside","Scotland","61.4",61.4,"226.1","Operational","Butt","Second Fill","Sherry",22.01,323,14,12,7,224883.62,696.23,3662.6,166.41,10217.34
+"2017-10-04","Macallan","Speyside","Scotland","58.9",58.9,"141.09","Operational","Hogshead","Second Fill","Sherry",23.76,201.56,7,7,5,121292.71,601.77,2059.3,86.67,5104.91
+"2017-11-01","Macallan","Speyside","Scotland","58",58,"144.14","Operational","Hogshead","Second Fill",NA,22.83,205.91,10,10,5,69483.27,337.44,1197.99,52.47,3043.51
+"2018-02-07","Macallan","Speyside","Scotland","52.75",52.75,"180","Operational","Hogshead","Second Fill","Sherry",29.03,257.14,20,15,10,322086.75,1252.57,6105.91,210.33,11094.96
+"2018-01-03","Macallan","Speyside","Scotland","50.02",50.02,"168.4","Operational","Hogshead","Third Fill","Sherry",28.01,240.57,14,12,7,180521.55,750.39,3608.99,128.85,6444.9
+"2017-07-05","Macallan","Speyside","Scotland","53.3",53.3,"101","Operational","Hogshead","Second Fill","Sherry",24.51,144.29,2,2,2,71101.74,492.77,1333.99,54.43,2900.93
+"2017-10-04","Macallan","Speyside","Scotland","60.5",60.5,"186.45","Operational","Hogshead","Second Fill","Sherry",23.76,266.36,7,7,5,109913.15,412.65,1816.75,76.46,4625.97
+"2025-04-02","Miltonduff","Speyside","Scotland","61.27",61.27,"189.24","Operational",NA,NA,NA,13.94,270.34,134,67,41,3532.92,13.07,57.66,4.14,253.44
+"2018-10-03","Tobermory","Highlands","Scotland","53.5",53.5,"177","Operational","Hogshead","First Fill",NA,22.28,252.86,29,15,10,16604.03,65.66,310.36,13.93,745.24
+"2019-06-05","Tobermory","Highlands","Scotland","54.2",54.2,"196","Operational","Hogshead",NA,NA,23.5,280,26,11,5,16807.23,60.03,310.1,13.2,715.2
+"2023-03-22","Tobermory","Highlands","Scotland","50.5",50.5,"204.2","Operational","Butt",NA,NA,28.75,291.71,52,11,2,50432.12,172.88,998.66,34.74,1754.16
+"2018-09-05","Tobermory","Highlands","Scotland","56",56,"171","Operational","Hogshead","First Fill",NA,23.73,244.29,27,12,8,22377.58,91.6,399.6,16.84,943.01
+"2018-09-05","Tobermory","Highlands","Scotland","49.7",49.7,"323","Operational","Butt","First Fill",NA,24.21,461.43,27,12,8,33500.94,72.6,674.06,27.84,1383.76
+"2018-12-05","Tullibardine","Highlands","Scotland","58.4",58.4,"215","Operational","Hogshead",NA,"Sherry",13.48,307.14,26,15,7,6903.36,22.48,118.21,8.77,512.12
+"2017-11-01","Tullibardine","Highlands","Scotland","57.09",57.09,"153.4","Operational",NA,NA,"Bourbon",11.83,219.14,10,10,5,3067.4,14,53.73,4.54,259.29
+"2017-09-06","Tullibardine","Highlands","Scotland","59",59,"168","Operational","Barrel",NA,"Bourbon",10.68,240,6,6,5,4958.21,20.66,84.04,7.87,464.25
+"2018-12-05","Tullibardine","Highlands","Scotland","57.7",57.7,"148.2","Operational","Barrel",NA,"Bourbon",13.53,211.71,26,15,7,4037.82,19.07,69.98,5.17,298.43
+"2025-11-23","Annandale","Lowlands","Scotland","63.5",160.4,"252.6","Operational","Hogshead",NA,NA,4.89,360.86,78,12,1,2025,5.61,12.62,2.58,414.11
+"2025-11-23","Annandale","Lowlands","Scotland","63.5",126.17,"198.7","Operational","Barrel",NA,"Bourbon",4.89,283.86,78,12,1,1375,4.84,10.9,2.23,281.19
+"2022-02-27","Ardmore","Highlands","Scotland","58.4",82.34,"141","Operational","Barrel","Second Fill",NA,21.16,201.43,85,59,25,53306.35,264.64,647.39,30.6,2519.2
+"2025-06-22","Ardmore","Highlands","Scotland","57.6",92.62,"160.8","Operational","Barrel","Second Fill","Bourbon",14.47,229.71,131,61,22,2309.94,10.06,24.94,1.72,159.64
+"2025-11-23","Ardmore","Highlands","Scotland","67.8",170.52,"251.5","Operational","Hogshead",NA,NA,4.89,359.29,78,12,1,1725,4.8,10.12,2.07,352.76
+"2024-05-26","Ardmore","Highlands","Scotland","58.2",95.27,"163.7","Operational","Barrel","Second Fill","Bourbon",13.4,233.86,77,59,13,6250.93,26.73,65.61,4.9,466.49
+"2021-03-28","Arran","Highlands","Scotland","57.8",101.15,"175","Operational","Barrel",NA,"Bourbon",12.24,250,95,65,28,9053.47,36.21,89.51,7.31,739.66
+"2022-04-24","Arran","Highlands","Scotland","52.1",73.93,"141.9","Operational","Barrel",NA,"Bourbon",17.31,202.71,97,63,33,23482.5,115.84,317.63,18.35,1356.59
+"2021-01-03","Aultmore","Speyside","Scotland","60.2",32.77,"54.44","Operational","Octave","First Fill","Sherry",10.01,77.77,79,61,38,2847.59,36.62,86.9,8.68,284.47
+"2025-06-22","Aultmore","Speyside","Scotland","61.4",138.95,"226.3","Operational","Hogshead",NA,NA,8.47,323.29,131,61,22,3012.96,9.32,21.68,2.56,355.72
+"2021-10-24","Ben Nevis","Highlands","Scotland","52.6",60.02,"114.1","Operational","Hogshead","Second Fill",NA,25.81,163,99,34,24,30699.82,188.34,511.49,19.82,1189.45
+"2023-09-24","Ben Nevis","Highlands","Scotland","55.4",81.11,"146.4","Operational","Hogshead","Second Fill",NA,25.73,209.14,37,26,9,31704.55,151.59,390.88,15.19,1232.2
+"2023-08-27","Ben Nevis","Highlands","Scotland","51",51.71,"101.4","Operational","Barrel",NA,NA,25.65,144.86,32,21,4,23480.2,162.09,454.07,17.7,915.41
+"2021-09-26","Ben Nevis","Highlands","Scotland","51.6",100.62,"195","Operational","Hogshead",NA,NA,25.74,278.57,98,33,18,43438.61,155.93,431.71,16.77,1687.59
+"2022-02-27","Ben Nevis","Highlands","Scotland","47.2",70.65,"149.69","Operational","Barrel",NA,"Bourbon",18.16,213.84,85,59,25,15058.29,70.42,213.14,11.74,829.2
+"2023-02-26","Ben Nevis","Highlands","Scotland","49.5",77.52,"156.6","Operational","Hogshead",NA,NA,27.15,223.71,66,11,2,45263.88,202.33,583.9,21.51,1667.18
+"2022-01-02","Ben Nevis","Highlands","Scotland","43.2",79.33,"183.64","Operational","Hogshead",NA,NA,34,262.34,91,54,30,33994.78,129.58,428.52,12.6,999.85
+"2021-11-28","Ben Nevis","Highlands","Scotland","50.5",74.59,"147.7","Operational","Hogshead",NA,NA,25.91,211,99,42,34,38377.73,181.88,514.52,19.86,1481.19
+"2021-08-29","Benriach","Speyside","Scotland","61.7",265.93,"431","Operational","Butt",NA,"Sherry",6.66,615.71,91,26,8,9084.3,14.75,34.16,5.13,1364.01
+"2025-11-23","Benrinnes","Speyside","Scotland","57.59",67.1,"116.51","Operational","Barrel",NA,NA,16.89,166.44,78,12,1,3200,19.23,47.69,2.82,189.46
+"2025-11-23","Blair Athol","Highlands","Scotland","61",110,"180.32","Operational","Barrel",NA,NA,4.89,257.6,78,12,1,2000,7.76,18.18,3.72,409
+"2025-04-27","Blue Hill (Craigellachie)","Speyside","Scotland","59.7",97.49,"163.3",NA,"Barrel",NA,NA,9.32,233.29,134,67,41,3684.33,15.79,37.79,4.05,395.31
+"2020-10-25","Bowmore","Islay","Scotland","43.7",75.6,"173","Operational","Hogshead",NA,NA,33.82,247.14,46,30,23,82728.23,334.74,1094.29,32.36,2446.13
+"2025-11-23","Bowmore","Islay","Scotland","57.8",17,"29.41","Operational","Barrel",NA,NA,24.89,42.01,78,12,1,4650,110.69,273.53,10.99,186.82
+"2025-09-28","Bruichladdich","Islay","Scotland","53.4",66.75,"125","Operational","Barrel",NA,"Bourbon",20.74,178.57,112,28,6,10114.5,56.64,151.53,7.31,487.68
+"2023-04-30","Bruichladdich","Islay","Scotland","59.6",97.15,"163","Operational","Barrel",NA,"Bourbon",13.33,232.86,47,15,9,27012.08,116,278.05,20.86,2026.41
+"2022-04-24","Bruichladdich","Islay","Scotland","57.7",99.82,"173","Operational","Hogshead",NA,"Bourbon",19.31,247.14,97,63,33,38071.88,154.05,381.41,19.75,1971.61
+"2021-11-28","Bruichladdich","Islay","Scotland","59.3",105.55,"178","Operational",NA,NA,"Bourbon",11.91,254.29,99,42,34,20224.45,79.53,191.61,16.09,1698.11
+"2023-10-29","Bruichladdich","Islay","Scotland","58.6",98.04,"167.3","Operational","Barrel","First Fill","Bourbon",12.82,239,36,21,10,24306.82,101.7,247.93,19.34,1896.01
+"2021-01-24","Bruichladdich","Islay","Scotland","56.2",107.34,"191","Operational","Hogshead",NA,"Sherry",15.06,272.86,79,61,38,33275.23,121.95,310,20.58,2209.51
+"2023-04-30","Bruichladdich","Islay","Scotland","59.7",103.28,"173","Operational","Barrel","First Fill","Bourbon",13.33,247.14,47,15,9,22465.49,90.9,217.52,16.32,1685.33
+"2021-05-30","Bruichladdich","Islay","Scotland","62.4",95.47,"153","Operational",NA,NA,"Bourbon",16.41,218.57,95,57,18,19137.18,87.56,200.45,12.22,1166.19
+"2023-10-29","Bunnahabhain","Islay","Scotland","60.4",93.92,"155.5","Operational","Barrel",NA,NA,10.82,222.14,36,21,10,10251.14,46.15,109.15,10.09,947.43
+"2021-07-25","Caol Ila","Islay","Scotland","45.7",87.29,"191","Operational","Hogshead",NA,NA,31.56,272.86,98,37,10,63295.15,231.97,725.11,22.98,2005.55
+"2020-04-26","Craigellachie","Speyside","Scotland","64.9",137.59,"212","Operational","Hogshead","First Fill","Sherry",12.32,302.86,27,16,11,11828.57,39.06,85.97,6.98,960.11
+"2023-08-27","Croftengea (Loch Lomond)","Highlands","Scotland","54",103.68,"192",NA,"Hogshead",NA,NA,14.65,274.29,32,21,4,9827.68,35.83,94.79,6.47,670.83
+"2025-11-23","Dailuaine","Speyside","Scotland","63.5",162.37,"255.7","Operational","Hogshead",NA,NA,1.89,365.29,78,12,1,2025,5.54,12.47,6.6,1071.43
+"2025-04-27","Dalmunach","Speyside","Scotland","65.5",109.32,"166.9","Operational","Barrel",NA,NA,10.32,238.43,134,67,41,3785.27,15.88,34.63,3.36,366.79
+"2022-10-30","Deanston","Highlands","Scotland","55.8",74.21,"133","Operational","Hogshead",NA,NA,30.83,190,95,32,9,36201.47,190.53,487.82,15.82,1174.23
+"2019-05-26","Fettercairn","Highlands","Scotland","51",63.75,"125","Operational","Hogshead",NA,NA,30.4,178.57,25,8,2,31158.02,174.49,488.75,16.08,1024.93
+"2020-03-22","Fettercairn","Highlands","Scotland","52.1",67.73,"130","Operational","Hogshead",NA,NA,31.22,185.71,20,12,7,30828.73,166,455.17,14.58,987.47
+"2020-05-24","Girvan","Lowlands","Scotland","60",51,"85","Operational","Barrel",NA,"Bourbon",14.39,121.43,29,18,13,2217.86,18.26,43.49,3.02,154.13
+"2022-03-27","Glasgow","Lowlands","Scotland","63.4",114.68,"180.89","Operational","Barrel",NA,"Bourbon",4.23,258.41,92,59,24,3633.43,14.06,31.68,7.49,858.97
+"2022-03-27","Glasgow","Lowlands","Scotland","63",112.5,"178.57","Operational","Barrel",NA,"Bourbon",4.23,255.1,92,59,24,2978.22,11.67,26.47,6.26,704.07
+"2022-02-27","Glasgow","Lowlands","Scotland","62.8",92.79,"147.75","Operational","Barrel","First Fill","Virgin Oak",7.16,211.07,85,59,25,4397.02,20.83,47.39,6.62,614.11
+"2022-03-27","Glasgow","Lowlands","Scotland","62.9",83.25,"132.35","Operational","Barrel","First Fill","Virgin Oak",7.23,189.07,92,59,24,4169.51,22.05,50.08,6.93,576.7
+"2021-02-21","Glen Garioch","Highlands","Scotland","57.3",34.26,"59.79","Operational","Octave","First Fill","Sherry",10.14,85.41,90,65,39,2717.12,31.81,79.31,7.82,267.96
+"2025-11-23","Glen Moray","Speyside","Scotland","57.74",97.6,"169.03","Operational","Barrel",NA,NA,10.89,241.47,78,12,1,2300,9.52,23.57,2.16,211.2
+"2024-03-24","Glen Moray","Speyside","Scotland","60.5",72.42,"119.7","Operational","Hogshead","Second Fill",NA,17.23,171,81,55,42,7971.43,46.62,110.07,6.39,462.65
+"2025-06-22","Glen Moray","Speyside","Scotland","60.2",69.41,"115.3","Operational","Hogshead","Second Fill",NA,18.47,164.71,131,61,22,2812.1,17.07,40.51,2.19,152.25
+"2021-02-21","Glen Ord","Highlands","Scotland","59.7",70.58,"118.22","Operational","Quarter Cask","First Fill","Sherry",8.14,168.89,90,65,39,4539.18,26.88,64.31,7.9,557.64
+"2020-08-23","Glenfarclas","Speyside","Scotland","63",113.4,"180","Operational","Hogshead",NA,NA,9.64,257.14,34,25,12,18111.88,70.44,159.72,16.57,1878.83
+"2024-03-24","Glenrothes","Speyside","Scotland","64.6",149.1,"230.8","Operational","Hogshead",NA,"Sherry",16.23,329.71,81,55,42,16257.52,49.31,109.04,6.72,1001.7
+"2021-05-30","Glenrothes","Speyside","Scotland","59.8",45.09,"75.4","Operational","Hogshead","Second Fill","Bourbon",30.41,107.71,95,57,18,18885.38,175.34,418.84,13.77,621.03
+"2024-06-23","Hazelburn","Campbeltown","Scotland","51.2",85.35,"166.7","Closed","Hogshead",NA,NA,26.48,238.14,84,62,20,74899.33,314.52,877.56,33.14,2828.52
+"2023-10-29","Highland Park","Highlands","Scotland","59.1",120.86,"204.5","Operational","Hogshead",NA,NA,17.82,292.14,36,21,10,21136.36,72.35,174.88,9.81,1186.1
+"2025-11-23","Inchgower","Speyside","Scotland","55.83",113.9,"204.01","Operational","Barrique",NA,NA,14.89,291.44,78,12,1,3000,10.29,26.34,1.77,201.48
+"2025-11-23","Inchgower","Speyside","Scotland","60.9",139.1,"228.4","Operational","Hogshead",NA,NA,4.89,326.29,78,12,1,1850,5.67,13.3,2.72,378.32
+"2025-11-23","Ledaig (Tobermory)","Highlands","Scotland","63.09",118.1,"187.19",NA,"Barrel",NA,NA,4.89,267.41,78,12,1,2000,7.48,16.93,3.46,409
+"2021-01-24","Ledaig (Tobermory)","Highlands","Scotland","57.6",122.21,"212.17",NA,"Hogshead",NA,NA,12.06,303.1,79,61,38,16637.61,54.89,136.14,11.29,1379.57
+"2023-10-29","Lochindaal (Bruichladdich)","Islay","Scotland","61.1",96.11,"157.3",NA,"Barrel","First Fill","Bourbon",14.82,224.71,36,21,10,21453.41,95.47,223.22,15.06,1447.6
+"2019-02-24","Macallan","Speyside","Scotland","44.6",67.79,"152","Operational","Hogshead",NA,NA,30.15,217.14,25,12,6,210948.03,971.48,3111.79,103.21,6996.62
+"2021-03-28","Macallan","Speyside","Scotland","54.6",45.97,"84.2","Operational","Hogshead",NA,NA,31.24,120.29,95,65,28,160029.71,1330.37,3481.18,111.43,5122.59
+"2019-10-27","Macallan","Speyside","Scotland","52.1",66.69,"128","Operational","Hogshead","First Fill",NA,30.82,182.86,21,11,5,206738.23,1130.58,3099.99,100.58,6707.92
+"2022-07-24","Macallan","Speyside","Scotland","45.1",38.47,"85.3","Operational","Hogshead","Second Fill",NA,32.56,121.86,110,56,23,159997.96,1312.97,4159.03,127.73,4913.94
+"2022-04-24","Macallan","Speyside","Scotland","51.5",192.61,"374","Operational","Butt","Second Fill",NA,34.31,534.29,97,63,33,1064268.75,1991.93,5525.51,161.05,31019.2
+"2020-07-26","Macallan","Speyside","Scotland","50.2",70.28,"140","Operational","Hogshead",NA,NA,30.57,200,28,18,7,278104.95,1390.52,3957.1,129.44,9097.32
+"2020-04-26","Macduff","Highlands","Scotland","63.5",135.89,"214","Operational","Barrique","First Fill",NA,11.32,305.71,27,16,11,7714.29,25.23,56.77,5.01,681.47
+"2024-03-24","Macduff","Highlands","Scotland","62.8",129.18,"205.7","Operational","Barrique","First Fill",NA,15.23,293.86,81,55,42,10383.83,35.34,80.38,5.28,681.8
+"2020-09-27","Miltonduff","Speyside","Scotland","65.5",299.99,"458","Operational","Butt",NA,NA,11.74,654.29,42,30,17,17901.01,27.36,59.67,5.08,1524.79
+"2020-07-26","North British","Lowlands","Scotland","68.6",233.93,"341","Operational","Butt",NA,"Sherry",4.57,487.14,28,18,7,3708.07,7.61,15.85,3.47,811.39
+"2025-01-05","North British","Lowlands","Scotland","60.1",90.15,"150","Operational","Barrel",NA,"Bourbon",15.01,214.29,105,63,26,2369.65,11.06,26.29,1.75,157.87
+"2022-02-27","North British","Lowlands","Scotland","61.3",79.63,"129.9","Operational","Barrel",NA,"Bourbon",12.16,185.57,85,59,25,1355.25,7.3,17.02,1.4,111.45
+"2020-07-26","North British","Lowlands","Scotland","62.8",67.2,"107","Operational","Barrel",NA,"Bourbon",10.57,152.86,28,18,7,1949.93,12.76,29.02,2.75,184.48
+"2020-05-24","North British","Lowlands","Scotland","61.1",62.32,"102","Operational","Barrel",NA,"Bourbon",10.39,145.71,29,18,13,1703.57,11.69,27.34,2.63,163.96
+"2021-05-30","North British","Lowlands","Scotland","69.1",135.44,"196","Operational","Barrel",NA,"Bourbon",11.41,280,95,57,18,2266.25,8.09,16.73,1.47,198.62
+"2020-11-22","North British","Lowlands","Scotland","60.9",90.74,"149","Operational","Barrel",NA,"Bourbon",14.89,212.86,56,38,26,2561.98,12.04,28.23,1.9,172.06
+"2020-05-24","North British","Lowlands","Scotland","67.3",77.39,"115","Operational","Barrel",NA,"Bourbon",4.39,164.29,29,18,13,2217.86,13.5,28.66,6.53,505.21
+"2023-03-26","North British","Lowlands","Scotland","61.2",112,"183","Operational","Barrel",NA,"Bourbon",13.23,261.43,52,11,2,1975.08,7.55,17.63,1.33,149.29
+"2020-11-22","North British","Lowlands","Scotland","61.8",101.35,"164","Operational","Barrel",NA,"Bourbon",14.89,234.29,56,38,26,2561.98,10.94,25.28,1.7,172.06
+"2020-10-25","Port Dundas","Lowlands","Scotland","62.2",131.24,"211","Closed","Hogshead",NA,"Port",11.81,301.43,46,30,23,5178.51,17.18,39.46,3.34,438.49
+"2021-01-03","Port Dundas","Lowlands","Scotland","61.3",120.09,"195.9","Closed","Hogshead",NA,"Port",12.01,279.86,79,61,38,4479.36,16.01,37.3,3.11,372.97
+"2022-02-27","Port Dundas","Lowlands","Scotland","56.4",93.29,"165.4","Closed","Hogshead","Second Fill","Bourbon",22.16,236.29,85,59,25,8553.11,36.2,91.68,4.14,385.97
+"2020-07-26","Royal Brackla","Highlands","Scotland","61.9",82.33,"133","Operational","Hogshead","First Fill","Sherry",6.57,190,28,18,7,6521.08,34.32,79.21,12.06,992.55
+"2023-10-29","Speyside","Speyside","Scotland","51.2",79.56,"155.4","Operational","Hogshead",NA,"Sherry",31.82,222,36,21,10,23250,104.73,292.23,9.18,730.67
+"2025-05-25","Speyside","Speyside","Scotland","68.7",117.96,"171.7","Operational","Barrel",NA,NA,3.39,245.29,134,66,22,1587.52,6.47,13.46,3.97,468.29
+"2022-06-26","Speyside","Speyside","Scotland","65.1",242.17,"372","Operational","Butt",NA,"Sherry",26.48,531.43,108,55,31,43808.5,82.44,180.9,6.83,1654.4
+"2024-04-28","Springbank","Campbeltown","Scotland","48.9",80.05,"163.7","Operational","Hogshead",NA,NA,26.32,233.86,78,57,12,96134.83,411.08,1200.93,45.63,3652.54
+"2022-05-29","Springbank","Campbeltown","Scotland","52.4",70.95,"135.4","Operational","Hogshead","First Fill","Sherry",29.4,193.43,106,64,39,162826.99,841.79,2294.95,78.06,5538.33
+"2024-01-02","Springbank","Campbeltown","Scotland","50.5",52.87,"104.7","Operational","Barrel","Second Fill","Bourbon",31,149.57,75,55,45,116692.02,780.18,2207.15,71.2,3764.26
+"2024-04-28","Springbank","Campbeltown","Scotland","46.5",22.88,"49.2","Operational","Hogshead","First Fill","Sherry",27.32,70.29,78,57,12,36573.03,520.32,1598.47,58.51,1338.69
+"2021-10-24","Springbank","Campbeltown","Scotland","44.6",59.76,"134","Operational","Hogshead","First Fill","Sherry",23.81,191.43,99,34,24,89643.49,468.28,1500.06,63,3764.95
+"2025-11-23","Staoisha (Bunnahabhain)","Islay","Scotland","62.195",112.21,"180.41",NA,"Barrique",NA,NA,3.89,257.73,78,12,1,2550,9.89,22.73,5.84,655.53
+"2023-08-27","Staoisha (Bunnahabhain)","Islay","Scotland","59.6",104.48,"175.3",NA,"Barrel",NA,NA,10.65,250.43,32,21,4,10199.54,40.73,97.62,9.17,957.7
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","65.3",123.1,"188.51",NA,"Barrel",NA,NA,4.89,269.3,78,12,1,1150,4.27,9.34,1.91,235.17
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","65.8",124.99,"189.96",NA,"Barrel",NA,NA,4.89,271.37,78,12,1,1225,4.51,9.8,2,250.51
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","61.6",120.9,"196.26",NA,"Barrel",NA,NA,4.89,280.37,78,12,1,1225,4.37,10.13,2.07,250.51
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","65.4",125.9,"192.5",NA,"Barrel",NA,NA,4.89,275,78,12,1,1325,4.82,10.52,2.15,270.96
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","65.5",121.5,"185.49",NA,"Barrel",NA,NA,4.89,264.99,78,12,1,1200,4.53,9.88,2.02,245.4
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","62.7",102.6,"163.63",NA,"Barrel",NA,NA,4.89,233.76,78,12,1,1125,4.81,10.96,2.24,230.06
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","62.7",114.4,"182.45",NA,"Barrel",NA,NA,4.89,260.64,78,12,1,1275,4.89,11.15,2.28,260.74
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","61.8",117.1,"189.48",NA,"Barrel",NA,NA,4.89,270.69,78,12,1,1150,4.25,9.82,2.01,235.17
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","63.3",119.6,"188.94",NA,"Barrel",NA,NA,4.89,269.91,78,12,1,1275,4.72,10.66,2.18,260.74
+"2025-11-23","teithmill (Deanston)","Speyside","Scotland","62",65.5,"105.64",NA,"Barrel",NA,NA,4.89,150.91,78,12,1,1100,7.29,16.79,3.43,224.95
+"2025-05-25","teithmill (Deanston)","Speyside","Scotland","63.6",152.04,"239.05",NA,"Hogshead",NA,NA,6.4,341.5,134,66,22,2015.9,5.9,13.26,2.07,314.98
+"2021-03-28","Tobermory","Highlands","Scotland","54.4",77.25,"142","Operational","Hogshead",NA,NA,27.24,202.86,95,65,28,15429.16,76.06,199.73,7.33,566.42
+"2022-10-30","Tobermory","Highlands","Scotland","51.1",204.4,"400","Operational","Butt",NA,NA,28.83,571.43,95,32,9,63559.83,111.23,310.96,10.79,2204.64
+"2024-05-26","Tobermory","Highlands","Scotland","46.9",66.69,"142.2","Operational","Hogshead",NA,NA,29.4,203.14,77,59,13,15627.33,76.93,234.33,7.97,531.54
+"2021-01-03","Tullibardine","Highlands","Scotland","66.6",30.21,"45.36","Operational","Octave","First Fill","Sherry",5.01,64.8,79,61,38,1535.78,23.7,50.84,10.15,306.54
+"2025-06-22","Tullibardine","Highlands","Scotland","63.6",94.45,"148.5","Operational","Barrel",NA,NA,16.47,212.14,131,61,22,2033.75,9.59,21.53,1.31,123.48
+"2021-02-21","Tullibardine","Highlands","Scotland","62.4",70.83,"113.51","Operational","Quarter Cask","First Fill","Sherry",6.14,162.16,90,65,39,3452.34,21.29,48.74,7.94,562.27
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",43.49,"63.12","Operational","Octave","First Fill","Wine",3.66,90.17,91,26,8,1219.54,13.52,28.04,7.66,333.21
+"2021-02-21","Tullibardine","Highlands","Scotland","62.4",34.05,"54.57","Operational","Octave","First Fill","Sherry",6.14,77.96,90,65,39,1822.07,23.37,53.51,8.72,296.75
+"2021-01-03","Tullibardine","Highlands","Scotland","66.6",30.21,"45.36","Operational","Octave","First Fill","Sherry",5.01,64.8,79,61,38,1663.76,25.68,55.07,10.99,332.09
+"2021-01-03","Tullibardine","Highlands","Scotland","68.8",39.88,"57.97","Operational","Octave","First Fill","Wine",3.01,82.81,79,61,38,1663.76,20.09,41.72,13.86,552.74
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",37.01,"53.71","Operational","Octave","First Fill","Bourbon",3.66,76.73,91,26,8,1169.76,15.25,31.61,8.64,319.61
+"2025-11-23","Tullibardine","Highlands","Scotland","51.02",77.1,"151.11","Operational","Barrel",NA,NA,13.89,215.87,78,12,1,2700,12.51,35.02,2.52,194.38
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",43.49,"63.12","Operational","Octave","First Fill","Wine",3.66,90.17,91,26,8,1194.65,13.25,27.47,7.51,326.41
+"2021-01-03","Tullibardine","Highlands","Scotland","68.8",35.67,"51.84","Operational","Octave","First Fill","Sherry",3.01,74.06,79,61,38,1631.77,22.03,45.75,15.2,542.12
+"2025-04-27","Tullibardine","Highlands","Scotland","61.1",101.49,"166.1","Operational","Barrel",NA,NA,2.32,237.29,134,67,41,1640.29,6.91,16.16,6.97,707.02
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",42.73,"62.02","Operational","Octave","First Fill","Wine",3.66,88.6,91,26,8,1244.42,14.05,29.12,7.96,340.01
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",34.72,"50.39","Operational","Octave","First Fill","Sherry",3.66,71.99,91,26,8,1144.87,15.9,32.97,9.01,312.81
+"2021-09-26","Tullibardine","Highlands","Scotland","66.7",123.9,"185.75","Operational","Barrel",NA,"Bourbon",5.74,265.36,98,33,18,4343.86,16.37,35.06,6.11,756.77
+"2021-11-28","Tullibardine","Highlands","Scotland","60.08",142.69,"237.5","Operational","Hogshead",NA,NA,6.91,339.29,99,42,34,4264.19,12.57,29.88,4.32,617.1
+"2019-11-24","Tullibardine","Highlands","Scotland","58",277.82,"479","Operational","Butt",NA,"Sherry",12.9,684.29,19,11,4,13628.57,19.92,49.06,3.8,1056.48
+"2020-07-26","Tullibardine","Highlands","Scotland","61.5",62.73,"102","Operational","Barrel",NA,"Bourbon",4.57,145.71,28,18,7,1662.24,11.41,26.5,5.8,363.73
+"2020-10-25","Tullibardine","Highlands","Scotland","69.7",36.24,"52","Operational","Octave","First Fill","Sherry",2.81,74.29,46,30,23,1981.9,26.68,54.69,19.46,705.3
+"2021-08-29","Tullibardine","Highlands","Scotland","68.9",44.63,"64.78","Operational","Octave","First Fill","Bourbon",3.66,92.54,91,26,8,1119.98,12.1,25.09,6.86,306.01
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.5",298,"476.8",NA,"Butt",NA,"Sherry",4.69,681.14,100,45,25,7796.2,11.45,26.16,5.58,1662.3
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","63",146.6,"232.7",NA,"Hogshead",NA,"Sherry",3.69,332.43,100,45,25,3118.48,9.38,21.27,5.76,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.3",145.16,"233",NA,"Hogshead",NA,"Sherry",4.69,332.86,100,45,25,4157.97,12.49,28.64,6.11,886.56
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.8",146.32,"233",NA,"Hogshead",NA,"Sherry",3.69,332.86,100,45,25,3118.48,9.37,21.31,5.78,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.8",146.07,"232.6",NA,"Hogshead",NA,"Sherry",3.69,332.29,100,45,25,3118.48,9.38,21.35,5.79,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","63",146.98,"233.3",NA,"Hogshead",NA,"Sherry",3.69,333.29,100,45,25,3118.48,9.36,21.22,5.75,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.8",145.57,"231.8",NA,"Hogshead",NA,"Sherry",3.69,331.14,100,45,25,3118.48,9.42,21.42,5.81,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.9",145.11,"230.7",NA,"Hogshead",NA,"Sherry",3.69,329.57,100,45,25,3118.48,9.46,21.49,5.82,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.7",145.34,"231.8",NA,"Hogshead",NA,"Sherry",3.69,331.14,100,45,25,3118.48,9.42,21.46,5.81,845.12
+"2025-05-25","Undisclosed Distillery","Highlands","Scotland","60.3",96.24,"159.6",NA,"Barrel",NA,NA,6.4,228,134,66,22,2041.09,8.95,21.21,3.31,318.92
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.8",139.79,"222.6",NA,"Hogshead",NA,"Sherry",3.69,318,100,45,25,3118.48,9.81,22.31,6.05,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.3",136.13,"218.5",NA,"Hogshead",NA,"Sherry",3.69,312.14,100,45,25,3118.48,9.99,22.91,6.21,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.6",140.91,"225.1",NA,"Hogshead",NA,"Sherry",3.69,321.57,100,45,25,3118.48,9.7,22.13,6,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","63.1",147.53,"233.8",NA,"Hogshead",NA,"Sherry",3.69,334,100,45,25,3118.48,9.34,21.14,5.73,845.12
+"2024-09-08","Undisclosed Distillery","Lowlands","Scotland","62.6",139.79,"223.3",NA,"Hogshead",NA,"Sherry",3.69,319,100,45,25,3118.48,9.78,22.31,6.05,845.12
+"2024-10-27","Whitlaw (Highland Park)","Highlands","Scotland","64.5",135.45,"210",NA,"Hogshead",NA,NA,5.82,300,124,67,37,5476.67,18.26,40.43,6.95,941.01
