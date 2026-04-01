@@ -25,7 +25,7 @@ KNOWN_DISTILLERIES = [
     "Old Pulteney", "Ben Nevis", "Oban", "Aberfeldy", "Blair Athol",
     "Edradour", "Glenturret", "Tomatin", "Talisker", "Highland Park",
     "Glengoyne", "Glendronach", "Benriach", "Daftmill", "Ardnamurchan",
-    "Annandale", "Wolfburn", "Torabhaig", "Raasay",
+    "Annandale", "Wolfburn", "Torabhaig", "Raasay","Glenglassaugh", "Fettercairn",
     # Speyside
     "Macallan", "Glenfarclas", "Aberlour", "Glenlivet", "Glenfiddich",
     "Balvenie", "Mortlach", "Craigellachie", "Dailuaine", "Linkwood",
@@ -82,7 +82,7 @@ CLOSED_DISTILLERIES = {
     "North Port", "Millburn", "Cambus", "Carsebridge",
     "Ladyburn", "Garnheath", "Ben Wyvis", "Glenugie",
     "Glenlochy", "Mosstowie", "Glenflagler", "Killyloch",
-    "Dumbarton", "Kinclaith", "Linlithgow",
+    "Dumbarton", "Kinclaith", "Linlithgow","Glenglassaugh",
     # Japanese
     "Karuizawa", "Hanyu", "Shirakawa",
     # Caribbean
@@ -1300,7 +1300,319 @@ def detect_bottler_series(title, bottler, abv,
 
     return None, None
 
+# In whisky_utils.py — add after detect_bottler_series
 
+REGIME_3_DISTILLERIES = {
+    "Karuizawa", "Hanyu", "Port Ellen", "Rosebank",
+    "Brora", "Springbank", "Laphroaig", "Ardbeg",
+}
+
+REGIME_4_DISTILLERIES_OB = {
+    "Yamazaki", "Hakushu", "Hibiki", "Chichibu",
+    "Akkeshi", "Yoichi", "Miyagikyo", "Kavalan",
+}
+
+REGIME_1_DISTILLERIES = {
+    "Dalmore",       # luxury brand play, Luminary/Constellation etc.
+    "Glenmorangie",  # Signet, luxury limited — normie gifting brand
+    "Glenfiddich",   # commodity + luxury tier, airport staple
+    "Balvenie",      # mainstream premium, normie gifting
+}
+
+DISTILLERY_R3_ERA = {
+    # Islay
+    "Ardbeg":        1981,
+    "Laphroaig":     1985,
+    "Bowmore":       1974,
+    "Bunnahabhain":  1982,
+    "Caol Ila":      1979,
+    "Bruichladdich": 1979,
+    # Highland
+    "Highland Park": 1979,
+    "Clynelish":     1983,
+    "Talisker":      1979,
+    "Ben Nevis":     1978,
+    "GlenDronach":   1978,  # pre-1978 old era, direct fired
+    "Glendronach":   1978,  # capitalisation variant
+    # Speyside
+    "Glenfarclas":   1980,
+    "Mortlach":      1975,
+    "Longmorn":      1979,
+    "Glen Grant":    1979,
+    "Strathisla":    1979,
+    "Linkwood":      1971,
+    "Glenlivet":     1969,
+    "Cragganmore":   1979,
+    "Craigellachie": 1979,
+    "Glenlossie":    1979,
+    "Longrow":       1979,
+    "Glenfiddich":  1974,  # pre-1974 old character era
+    # Campbeltown
+    "Springbank":    1979,
+    # Islands
+    "Tobermory":     1979,
+    # Lowland
+    "Glenkinchie":   1979,
+    "Auchentoshan":  1979,
+    "Glen Moray":    1979,
+    "Glen Moray":    1979,
+    "Lagavulin":     1979,
+    "Glenglassaugh": 1986,  # closed 1986
+    "Fettercairn":   1979,
+    "Glengoyne":     1979,  # already in era dict
+    "Aberfeldy":     1979,
+    "Blair Athol":   1979,
+    "Edradour":      1979,
+    "Balblair":      1979,
+    "Tomatin":       1979,
+    "Benriach":      1979,
+    "Glendullan":    1979,
+    "Dailuaine":     1979,
+}
+
+def classify_market_regime(title, distillery, bottler,
+                            is_ob, is_closed, series_tier,
+                            abv, bottling_year, age_years):
+    title_lower = str(title).lower() if title else ""
+    dist = str(distillery) if distillery else ""
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+    has_age  = age_years is not None and not pd.isna(age_years)  # ADD THIS
+    
+    # ------------------------------------------------------------------
+    # REGIME 3 — holy grail. Check first, highest priority.
+    # ------------------------------------------------------------------
+
+    # Karuizawa — all whisky R3, non-whisky R2
+    if dist == "Karuizawa":
+        if any(kw in title_lower for kw in
+               ["gin", "kohakuroman", "blend",
+                "club 72", "shinshu", "mars"]):
+            return 2
+        return 3
+
+    # Hanyu — all serious bottlings R3, cheap blends R2
+    if dist == "Hanyu":
+        if any(kw in title_lower for kw in
+               ["golden horse", "bushu"]):
+            return 2
+        return 3
+
+    # Rosebank, Brora, Port Ellen — all R3
+    if dist in {"Rosebank", "Brora", "Port Ellen"}:
+        return 3
+
+    # After the named R3 distillery blocks (Karuizawa, Hanyu etc.)
+    # and before the Bowmore block, add:
+
+    # General closed distillery rule
+    if is_closed:
+        # Pre-1990 distillation year in title
+        dist_year_match = re.search(
+            r'\b(19[0-9]{2})\b', title_lower
+        )
+        if dist_year_match:
+            dist_year = int(dist_year_match.group(1))
+            if dist_year <= 1989:
+                return 3
+        # Age statement implies old distillation
+        # 30+ year old closed distillery = always R3
+        if has_age and age_years >= 30:
+            return 3
+        # Very long age even without explicit statement
+        # e.g. "47 Year Old" without year
+        age_match = re.search(
+            r'\b([3-9][0-9]|[1-9][0-9]{2})\s*year', title_lower
+        )
+        if age_match and int(age_match.group(1)) >= 30:
+            return 3
+        
+    # For operational distilleries: implied old distillation
+    # from age statement + bottling year
+    if dist in DISTILLERY_R3_ERA:
+        threshold = DISTILLERY_R3_ERA[dist]
+        # Direct year in title
+        dist_year_match = re.search(
+            r'\b(19[0-9]{2})\b', title_lower
+        )
+        if dist_year_match:
+            dist_year = int(dist_year_match.group(1))
+            if dist_year <= threshold:
+                return 3
+        # Implied distillation year from age + bottling year
+        if has_age and has_year:
+            implied_dist_year = bottling_year - age_years
+            if implied_dist_year <= threshold:
+                return 3
+        # Fallback: use current auction window if no bottling year
+        if has_age and not has_year:
+            # Assume bottled approximately now (2024)
+            implied_dist_year = 2024 - age_years
+            if implied_dist_year <= threshold:
+                return 3
+            
+        # Bowmore — 1964 trilogy and named legendary expressions
+        if dist == "Bowmore":
+            if any(kw in title_lower for kw in
+                ["black bowmore", "white bowmore",
+                    "gold bowmore", "bouquet",
+                    "largiemeanoch", "bicentenary"]):
+                return 3
+
+        # Ardbeg 1970s
+        if dist == "Ardbeg":
+            if re.search(r'\b197[0-9]\b', title_lower):
+                return 3
+
+        # Springbank 1960s-1970s
+        if dist == "Springbank":
+            # 1960s-1970s vintage year in title → R3
+            if re.search(r'\b19[67][0-9]\b', title_lower):
+                return 3
+
+            # Pre-1990 distillation vintage explicitly stated → R3
+            dist_year = re.search(r'\b(19[0-8][0-9])\b', title_lower)
+            if dist_year and int(dist_year.group(1)) <= 1989:
+                return 3
+
+            # Old era format indicators → R3
+            if any(kw in title_lower for kw in
+                ["26 2/3", "pear shaped", "circa 1970",
+                    "circa 1980"]):
+                return 3
+
+            # 100º/100° proof — only R3 if clearly old era
+            # (not modern NAS or young expressions)
+            if any(kw in title_lower for kw in
+                ["100° proof", "100º proof"]):
+                # Modern bottling year = modern product
+                if has_year and bottling_year >= 2010:
+                    return 2
+                # Young age statement = modern product
+                if any(kw in title_lower for kw in
+                    ["5 year", "8 year", "10 year",
+                        "12 year", "15 year"]):
+                    return 2
+                return 3
+
+            return 2
+
+        # Laphroaig 1970s
+        if dist == "Laphroaig":
+            if re.search(r'\b197[0-9]\b', title_lower):
+                return 3
+
+        # GENERAL PRE-1975 RULE
+        # Any lot with a pre-1975 distillation year in the title
+        # from a distillery with known vintage character = R3
+        # This catches Bowmore 1960s, Mortlach 1950s-1960s,
+        # Highland Park 1960s-1970s, Glenfarclas 1950s-1960s etc.
+        
+        # Replace the general pre-1975 rule with:
+
+        # Distillery-specific golden era rule
+        dist_year_match = re.search(
+            r'\b(19[0-9]{2})\b', title_lower
+        )
+        if dist_year_match and dist in DISTILLERY_R3_ERA:
+            dist_year = int(dist_year_match.group(1))
+            threshold = DISTILLERY_R3_ERA[dist]
+            if dist_year <= threshold:
+                return 3
+
+        if has_age and not has_year:
+            # Assume bottled approximately now (2024)
+            implied_dist_year = 2024 - age_years
+            if implied_dist_year <= threshold:
+                return 3
+
+    # ------------------------------------------------------------------
+    # REGIME 4 — convergence (geek + normie)
+    # ------------------------------------------------------------------
+
+    if dist in REGIME_4_DISTILLERIES_OB and is_ob:
+        return 4
+
+    if dist == "Chichibu":
+        return 4
+
+    # Macallan
+    if dist == "Macallan":
+        if is_ob and any(kw in title_lower for kw in
+               ["fine oak", "triple cask", "double cask",
+                "gold", "amber", "sienna", "ruby",
+                "1824", "rare cask"]):
+            return 1
+        if is_ob and any(kw in title_lower for kw in
+               ["harmony", "archival", "folio",
+                "masters of photography", "no. 6",
+                "number 6", "m decanter", "reflexion",
+                "concept", "anecdotes", "sir peter blake",
+                "red collection", "aera", "a night on earth",
+                "distil your world", "lalique", "genesis",
+                "tales of", "exceptional cask",
+                "easter elchies", "edition no",
+                "capsule edition"]):
+            return 1
+        if is_ob:
+            old_vintage = re.search(r'\b19[0-7][0-9]\b',
+                                    title_lower)
+            fine_rare   = "fine & rare" in title_lower
+            select_res  = "select reserve" in title_lower
+            if has_year and bottling_year >= 2005:
+                if not old_vintage and not fine_rare \
+                        and not select_res:
+                    return 1
+            if not has_year and not old_vintage \
+                    and not fine_rare and not select_res:
+                return 1
+        return 4
+
+    # ------------------------------------------------------------------
+    # REGIME 1 — brand/luxury driven OB
+    # ------------------------------------------------------------------
+
+    if any(kw in title_lower for kw in
+           ["royal salute", "chivas regal",
+            "johnnie walker"]):
+        return 1
+
+    if dist == "Dalmore":
+        return 1
+
+    if is_ob and not is_closed and \
+            dist in REGIME_1_DISTILLERIES:
+        return 1
+
+    if dist == "Glenfiddich" and is_ob:
+        if any(kw in title_lower for kw in
+               ["rare collection", "time series",
+                "grand series", "experimental",
+                "janet sheed", "50 year"]):
+            return 4
+        return 1
+    
+    # In the Macallan/Dalmore/Glenfiddich R1 block, or as
+    # a separate Bowmore luxury catch before the Bowmore R3 block:
+    if dist == "Bowmore" and is_ob:
+        if any(kw in title_lower for kw in
+            ["four guardian", "aston martin",
+                "timeless", "inspired by", "lalique"]):
+            return 1
+        
+    if dist == "Highland Park" and is_ob:
+        if any(kw in title_lower for kw in
+            ["king christian", "magnus", "viking",
+                "full volume", "50 year", "40 year",
+                "fire", "ice"]):
+            return 1
+    
+    if is_ob and "lalique" in title_lower:
+        return 1    
+
+    # ------------------------------------------------------------------
+    # REGIME 2 — default
+    # ------------------------------------------------------------------
+    return 2
 # ---------------------------------------------------------------------------
 # Master enrichment pipeline
 # ---------------------------------------------------------------------------
@@ -1383,6 +1695,12 @@ def enrich_dataframe(df):
             r["volume_cl"]
         )), axis=1
     )
+
+    df["market_regime"] = df.apply(lambda r: classify_market_regime(
+        r["title"], r["distillery"], r["bottler"],
+        r["is_ob"], r["is_closed"], r["series_tier"],
+        r["abv"], r["bottling_year_derived"], r["age_years"]
+    ), axis=1)
 
     print(f"Done. {len(df):,} lots enriched.")
     return df
