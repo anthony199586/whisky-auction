@@ -89,6 +89,18 @@ CLOSED_DISTILLERIES = {
     "Caroni",
 }
 
+GRAIN_DISTILLERIES = {
+    "Dumbarton", "Cambus", "Carsebridge", "Invergordon",
+    "North British", "Caledonian", "Garnheath", "Girvan",
+    "Loch Lomond", "Strathclyde", "Cameronbridge",
+    "Port Dundas", "Inchgower",  # debatable
+}
+
+def is_grain_distillery(distillery):
+    if not distillery:
+        return False
+    return str(distillery) in GRAIN_DISTILLERIES
+
 KNOWN_BOTTLERS = [
     "Gordon & MacPhail", "G&M",
     "Cadenhead's", "Cadenheads", "Cadenhead",
@@ -145,6 +157,8 @@ BOTTLER_TIER = {
     "Master of Malt": 2, "Chapter 7": 2, "Compass Box": 2,
     "That Boutique-y Whisky Company": 2, "Boutique-y Whisky": 2,
 }
+
+LEGENDARY_BOTTLER_TIER_THRESHOLD = 4
 
 # Volume premium factors relative to 70cl baseline
 # Derived empirically from auction price data
@@ -960,7 +974,7 @@ def detect_smws_series(title):
     return "smws standard", 2
 
 
-def detect_hunter_laing_series(title, abv, bottling_year):
+def detect_hunter_laing_series(title, abv, bottling_year, distillery = None):
     """
     Hunter Laing series (est. 2013, split from Douglas Laing):
     Tier 5: Old & Rare Platinum — legendary old casks
@@ -975,7 +989,9 @@ def detect_hunter_laing_series(title, abv, bottling_year):
 
     if any(kw in title_lower for kw in
            ["old & rare", "old and rare", "platinum"]):
-        return "old & rare", 5
+        return detect_old_rare_series(
+            title, distillery, bottling_year
+        )
 
     if "authors" in title_lower:
         return "first editions authors", 4
@@ -1229,12 +1245,47 @@ def detect_wilson_morgan_series(title, bottling_year):
         return "early wilson morgan", 4
 
     return "wilson morgan standard", 3
+
+def detect_old_rare_series(title, distillery,
+                            bottling_year):
+    """
+    Old & Rare tier should reflect the liquid,
+    not just the series name.
+    Tier 5: closed distillery or pre-1985 distillation
+    Tier 4: prestige operational distillery old vintage
+    Tier 3: modern distillery in Old & Rare format
+    """
+    title_lower = str(title).lower() if title else ""
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Closed distillery = always tier 5
+    if distillery in CLOSED_DISTILLERIES:
+        return "old & rare", 5
+
+    # Pre-1985 distillation year in title = tier 5
+    year_match = re.search(
+        r'\b(19[0-8][0-9])\b', title_lower
+    )
+    if year_match and int(year_match.group(1)) <= 1984:
+        return "old & rare", 5
+
+    # 1985-1994 distillation = tier 4
+    if year_match and int(year_match.group(1)) <= 1994:
+        return "old & rare", 4
+
+    # Pre-2000 bottling without distillation year = tier 4
+    if has_year and bottling_year <= 2000:
+        return "old & rare", 4
+
+    # Modern = tier 3
+    return "old & rare", 3
 # ---------------------------------------------------------------------------
 # Master series dispatcher
 # ---------------------------------------------------------------------------
 
 def detect_bottler_series(title, bottler, abv,
-                           bottling_year, volume_cl=None):
+                           bottling_year, volume_cl=None, distillery=None):
     if pd.isna(bottler) or not bottler:
         return None, None
 
@@ -1277,8 +1328,6 @@ def detect_bottler_series(title, bottler, abv,
         return detect_old_malt_cask_series(title, abv, bottling_year)
     if b == "First Editions":
         return detect_first_editions_series(title, abv, bottling_year)
-    if b == "Old & Rare":
-        return ("old & rare", 5)
     if b == "Sestante":
         return detect_sestante_series(title, bottling_year)
     if b == "Silver Seal":
@@ -1297,6 +1346,11 @@ def detect_bottler_series(title, bottler, abv,
         return detect_chieftains_series(title, abv, bottling_year)
     if b in ["Wilson & Morgan"]:
         return detect_wilson_morgan_series(title, bottling_year)
+    if b == "Old & Rare":
+        return detect_old_rare_series(title, distillery, bottling_year)
+    if b in ["Hunter Laing", "Hunter Laing & Co"]:
+        # Also update Hunter Laing Old & Rare detection
+        return detect_hunter_laing_series(title, abv, bottling_year, distillery)
 
     return None, None
 
@@ -1401,8 +1455,15 @@ def classify_market_regime(title, distillery, bottler,
     if dist in {"Rosebank", "Brora", "Port Ellen"}:
         return 3
 
-    # After the named R3 distillery blocks (Karuizawa, Hanyu etc.)
-    # and before the Bowmore block, add:
+    if (series_tier is not None and
+        not pd.isna(series_tier) and
+        series_tier == 5):
+        # Check if bottler is in the legendary tier
+        bottler_tier_val = BOTTLER_TIER.get(
+            str(bottler) if bottler else "", 0
+        )
+        if bottler_tier_val >= 4:
+            return 3
 
     # General closed distillery rule
     if is_closed:
@@ -1634,7 +1695,8 @@ def enrich_dataframe(df):
         lambda r: is_ob(r["title"], r["bottler"]), axis=1
     )
     df["is_closed"]  = df["distillery"].apply(is_closed_distillery)
-
+    df["is_grain"] = df["distillery"].apply(is_grain_distillery).astype(int)
+    
     df[["distillation_year", "distillation_approx"]] = (
         df["distilled_date"].apply(
             lambda x: pd.Series(extract_year(x))
@@ -1692,7 +1754,7 @@ def enrich_dataframe(df):
         lambda r: pd.Series(detect_bottler_series(
             r["title"], r["bottler"],
             r["abv"], r["bottling_year_derived"],
-            r["volume_cl"]
+            r["volume_cl"], r["distillery"]
         )), axis=1
     )
 
