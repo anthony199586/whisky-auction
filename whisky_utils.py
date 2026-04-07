@@ -308,6 +308,259 @@ def normalise_cask_type(cask):
         return "small cask"
     return "other"
 
+# ---------------------------------------------------------------------------
+# OB series detection
+# ---------------------------------------------------------------------------
+
+def detect_lagavulin_expression(title, abv,
+                                 bottling_year, age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — old era White Horse labels
+    if any(kw in title_lower for kw in
+            ["26 2/3", "circa 1970", "circa 1980"]):
+        return "old era ob", 5
+
+    # Old distillation year
+    year_match = re.search(r'\b(19[6-8][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1985:
+        return "vintage ob", 5
+
+    # Tier 4 — prestige releases
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+    if any(kw in title_lower for kw in
+           ["feis ile", "feis ìle", "special release",
+            "syndicate", "prima", "ultima"]):
+        return "special release", 4
+    if any(kw in title_lower for kw in
+           ["25 year", "30 year", "37 year",
+            "40 year", "29 year"]):
+        return "ultra aged", 4
+
+    # Tier 3 — premium
+    if any(kw in title_lower for kw in
+           ["distillers edition", "distiller's edition",
+            "12 year", "cask strength"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["16 year", "8 year", "select"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_ardbeg_expression(title, abv,
+                              bottling_year, age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — pre-closure era (distilled <=1981)
+    year_match = re.search(r'\b(197[0-9]|198[01])\b',
+                           title_lower)
+    if year_match:
+        return "pre-closure era", 5
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970", "provenance",
+            "double barrel"]):
+        return "pre-closure era", 5
+
+    # Tier 4 — truly prestige:
+    # Committee Reserve, early single cask Feis Ile,
+    # very old age statements, rare vintage releases
+    if any(kw in title_lower for kw in
+           ["committee reserve", "21 year", "25 year",
+            "very young", "still young", "almost there",
+            "renaissance", "lord of the isles",
+            "airigh nam beist"]):
+        return "prestige release", 4
+
+    # Early single cask Feis Ile (pre-2013 bottling)
+    if any(kw in title_lower for kw in
+           ["feis ile", "feis ìle"]):
+        if has_year and bottling_year <= 2012:
+            return "prestige release", 4
+        return "annual limited", 3
+
+    # Single cask releases (non-Feis Ile)
+    if "single cask" in title_lower:
+        if has_age and age_years >= 15:
+            return "prestige release", 4
+        return "annual limited", 3
+
+    # Committee bottlings (not Reserve — those are tier 4)
+    if "committee" in title_lower:
+        return "annual limited", 3
+
+    # Tier 3 — premium named expressions and
+    # modern annual limited releases
+    if any(kw in title_lower for kw in
+           ["uigeadail", "corryvreckan",
+            "blaaack", "grooves", "drum", "kelpie",
+            "galileo", "supernova", "perpetuum",
+            "alligator", "dark cove", "traigh bhan",
+            "hypernova", "ardcore", "an oa",
+            "rollercoaster"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year", "wee beastie", "5 year",
+            "8 year"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_highland_park_expression(title, abv,
+                                     bottling_year,
+                                     age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — old era pre-1979
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970", "circa 1960"]):
+        return "old era ob", 5
+    year_match = re.search(r'\b(19[5-7][0-9])\b',
+                           title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+
+    # Tier 4 — prestige age-stated and limited
+    if has_age and age_years >= 30:
+        return "ultra aged", 4
+    if any(kw in title_lower for kw in
+           ["40 year", "50 year", "30 year",
+            "25 year", "full volume",
+            "ambassador cask",  # moved from tier 1
+            "bicentenary", "dark origins",
+            "warriors series", "valknut",
+            "odin", "thor", "loki", "freya",
+            "single cask", "feis ile"]):
+        return "prestige release", 4
+
+    # Tier 3 — premium
+    if any(kw in title_lower for kw in
+           ["18 year", "21 year", "einar",
+            "svein", "ingolfur"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["12 year", "10 year", "15 year",
+            "magnus", "viking honour",
+            "viking legend", "viking pride"]):
+        return "core range", 2
+
+    # Removed "ambassador" from tier 1 — 
+    # ambassador without "cask" is still tier 2
+    return "standard ob", 2
+
+
+def detect_glendronach_expression(title, abv,
+                                   bottling_year,
+                                   age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — old era pre-1978
+    year_match = re.search(r'\b(19[6-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1978:
+        return "vintage ob", 5
+
+    # Tier 4 — prestige releases
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+    if any(kw in title_lower for kw in
+           ["parliament", "allardice",
+            "recherche", "grandeur",
+            "single cask", "batch",
+            "master vintage", "aged 25",
+            "aged 30", "aged 33"]):
+        return "prestige release", 4
+
+    # Old vintage year (1979-1990)
+    if year_match and int(year_match.group(1)) <= 1990:
+        return "vintage ob", 4
+
+    # Tier 3 — premium
+    if any(kw in title_lower for kw in
+           ["revival", "18 year", "21 year",
+            "peated", "benriach"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["12 year", "15 year", "original ten",
+            "8 year"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_glenfarclas_expression(title, abv,
+                                   bottling_year,
+                                   age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — Family Collector Series and old vintages
+    if any(kw in title_lower for kw in
+           ["family collector", "collector series",
+            "1956", "1957", "1958", "1959",
+            "1960", "1961", "1962", "1963",
+            "1964", "1965", "1966"]):
+        return "family collector", 5
+
+    year_match = re.search(r'\b(19[5-6][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1966:
+        return "vintage ob", 5
+
+    # Tier 4 — Family Casks, very old age statements
+    if any(kw in title_lower for kw in
+           ["family cask", "family casks",
+            "50 year", "58 year", "60 year"]):
+        return "family casks", 4
+    if has_age and age_years >= 40:
+        return "ultra aged", 4
+
+    # Old vintage year (1967-1980)
+    if year_match:
+        dist_year = int(year_match.group(1))
+        if dist_year <= 1980:
+            return "vintage ob", 4
+
+    # Tier 3 — premium age statements
+    if any(kw in title_lower for kw in
+           ["25 year", "30 year", "40 year",
+            "105", "heritage", "175th"]):
+        return "premium core", 3
+
+    if has_age and age_years >= 25:
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year", "12 year", "15 year",
+            "17 year", "18 year", "21 year"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
 
 # ---------------------------------------------------------------------------
 # IB series detection
@@ -1280,6 +1533,86 @@ def detect_old_rare_series(title, distillery,
 
     # Modern = tier 3
     return "old & rare", 3
+
+def detect_laphroaig_expression(title, abv,
+                                 bottling_year, age_years):
+    """
+    Classify Laphroaig OB expressions by tier.
+    Tier 5: legendary old era OBs (pre-1985 distillation)
+    Tier 4: prestige age-stated releases (25yo+, Cairdeas
+             special, Feis Ile, retailer exclusives)
+    Tier 3: premium expressions (18yo, 10yo CS, Quarter Cask,
+             Triple Wood, standard Cairdeas)
+    Tier 2: core range (10yo standard, Select)
+    Tier 1: NAS entry level
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = (bottling_year is not None and
+                not pd.isna(bottling_year))
+
+    # Tier 5 — old era OBs (caught by R3 regime already
+    # but also classify here for series_tier consistency)
+    if any(kw in title_lower for kw in
+            ["26 2/3", "circa 1970", "circa 1980",
+            "vintage 75cl", "vintage 26"]):
+        return "old era ob", 5
+
+    # Old distillation year → tier 5
+    year_match = re.search(r'\b(19[6-8][0-9])\b', title_lower)
+    if year_match:
+        dist_year = int(year_match.group(1))
+        if dist_year <= 1985:
+            return "vintage ob", 5
+
+    # Tier 4 — prestige releases
+    # 30yo+ always tier 4
+    if has_age and age_years >= 30:
+        return "ultra aged", 4
+
+    # Named prestige series
+    if any(kw in title_lower for kw in
+           ["cairdeas", "wall collection",
+            "archive collection", "feis ile",
+            "friends of laphroaig"]):
+        if has_age and age_years >= 25:
+            return "cairdeas prestige", 4
+        return "cairdeas", 3
+
+    # 25yo
+    if has_age and age_years >= 25:
+        return "25 year old", 4
+
+    # Retailer/club exclusives — hard to detect by keyword
+    # but these are typically high-age or named bottlings
+    if any(kw in title_lower for kw in
+           ["dr jekyll", "for cecbl", "exclusive",
+            "single cask", "distillery exclusive"]):
+        return "exclusive ob", 4
+
+    # Tier 3 — premium expressions
+    if has_age and age_years >= 18:
+        return "aged ob", 3
+
+    if any(kw in title_lower for kw in
+           ["cask strength", "10 year old cask",
+            "quarter cask", "triple wood",
+            "double wood"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year old", "10yo", "select",
+            "oak select"]):
+        return "core range", 2
+
+    # Tier 1 — NAS entry
+    if any(kw in title_lower for kw in
+           ["lore", "px wood", "explore"]):
+        return "nas entry", 1
+
+    # Default — standard OB without clear expression signal
+    return "standard ob", 2
 # ---------------------------------------------------------------------------
 # Master series dispatcher
 # ---------------------------------------------------------------------------
@@ -1351,6 +1684,34 @@ def detect_bottler_series(title, bottler, abv,
     if b in ["Hunter Laing", "Hunter Laing & Co"]:
         # Also update Hunter Laing Old & Rare detection
         return detect_hunter_laing_series(title, abv, bottling_year, distillery)
+
+    return None, None
+
+
+def detect_ob_expression(title, distillery, abv,
+                          bottling_year, age_years):
+    if not distillery:
+        return None, None
+    dist = str(distillery)
+
+    if dist == "Laphroaig":
+        return detect_laphroaig_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Lagavulin":
+        return detect_lagavulin_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Ardbeg":
+        return detect_ardbeg_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Highland Park":
+        return detect_highland_park_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Glendronach":  # this is the actual stored value
+        return detect_glendronach_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Glenfarclas":
+        return detect_glenfarclas_expression(
+            title, abv, bottling_year, age_years)
 
     return None, None
 
@@ -1756,6 +2117,28 @@ def enrich_dataframe(df):
             r["abv"], r["bottling_year_derived"],
             r["volume_cl"], r["distillery"]
         )), axis=1
+    )
+
+    # OB expression classification
+    ob_mask = df["is_ob"] == True
+    df.loc[ob_mask, ["ob_expression", "ob_tier"]] = (
+        df[ob_mask].apply(
+            lambda r: pd.Series(detect_ob_expression(
+                r["title"], r["distillery"],
+                r["abv"], r["bottling_year_derived"],
+                r["age_years"]
+            )), axis=1
+        ).values
+    )
+
+    # Combine: use ob_tier for OBs, series_tier for IBs
+    df["effective_tier"] = df.apply(
+        lambda r: (
+            r["ob_tier"] if (r["is_ob"] and
+                            pd.notna(r.get("ob_tier")))
+            else r["series_tier"] if pd.notna(r["series_tier"])
+            else r.get("bottler_tier", 1)
+        ), axis=1
     )
 
     df["market_regime"] = df.apply(lambda r: classify_market_regime(
