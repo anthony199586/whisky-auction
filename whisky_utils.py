@@ -560,6 +560,284 @@ def detect_glenfarclas_expression(title, abv,
     return "standard ob", 2
 
 
+def detect_caol_ila_expression(title, abv, bottling_year,
+                                age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — Manager's Dram and pre-1979 old era
+    if "manager's dram" in title_lower or \
+       "managers dram" in title_lower:
+        return "managers dram", 5
+
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970", "circa 1960"]):
+        return "old era ob", 5
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+
+    # Implied pre-threshold distillation
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ob", 5
+    if has_age and not has_year:
+        if 2024 - age_years <= 1979:
+            return "vintage ob", 5
+
+    # Tier 4 — prestige limited
+    if any(kw in title_lower for kw in
+           ["prima & ultima", "prima and ultima",
+            "feis ile", "feis ìle",
+            "30 year", "35 year", "40 year",
+            "special release"]):
+        return "prestige release", 4
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+
+    # 1980s vintage — prestige but not tier 5
+    year_match2 = re.search(r'\b(198[0-9])\b', title_lower)
+    if year_match2:
+        return "vintage ob", 4
+
+    # Tier 3 — premium expressions
+    if any(kw in title_lower for kw in
+           ["distillers edition", "distiller's edition",
+            "cask strength", "18 year", "moch",
+            "synergy", "islay single malt"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["12 year", "select"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_mortlach_expression(title, abv, bottling_year,
+                                age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1975 old era (golden era threshold)
+    # and Rare Malts Selection
+    if "rare malts" in title_lower:
+        return "rare malts", 5
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970", "circa 1960"]):
+        return "old era ob", 5
+
+    year_match = re.search(r'\b(19[3-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1975:
+        return "vintage ob", 5
+
+    # Implied pre-threshold distillation
+    if has_age and has_year:
+        if bottling_year - age_years <= 1975:
+            return "vintage ob", 5
+    if has_age and not has_year:
+        if 2024 - age_years <= 1975:
+            return "vintage ob", 5
+
+    # Tier 4 — prestige
+    if any(kw in title_lower for kw in
+           ["midnight malt", "prima & ultima",
+            "prima and ultima", "special release",
+            "rare old", "25 year", "30 year",
+            "32 year", "26 year"]):
+        return "prestige release", 4
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+
+    # 1976-1989 vintage — prestige
+    if year_match and int(year_match.group(1)) <= 1989:
+        return "vintage ob", 4
+
+    # Tier 3 — premium
+    if any(kw in title_lower for kw in
+           ["distillers edition", "distiller's edition",
+            "wee witchie", "cowie's blue seal",
+            "cowies blue seal", "16 year",
+            "cask strength", "single cask"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["12 year", "little creature"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_tobermory_expression(title, abv, bottling_year,
+                                 age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1979 old era
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970", "circa 1960"]):
+        return "old era ob", 5
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+
+    # Implied pre-threshold distillation
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ob", 5
+    if has_age and not has_year:
+        if 2024 - age_years <= 1979:
+            return "vintage ob", 5
+
+    # Tier 4 — prestige: 1980s-1990s vintage,
+    # named exclusives, 20yo+
+    if any(kw in title_lower for kw in
+           ["thompson bros", "thompson brothers",
+            "dornoch", "clan denny",
+            "whisky jury", "20 year", "21 year",
+            "25 year", "26 year", "30 year"]):
+        return "prestige release", 4
+    if has_age and age_years >= 20:
+        return "aged ob", 4
+
+    year_match2 = re.search(r'\b(198[0-9]|199[0-9])\b',
+                             title_lower)
+    if year_match2:
+        return "vintage ob", 4
+
+    # Tier 3 — premium
+    if any(kw in title_lower for kw in
+           ["sherry cask", "oloroso", "port finish",
+            "15 year", "distillery exclusive",
+            "single cask"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year", "12 year"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_ledaig_expression(title, abv, bottling_year,
+                              age_years):
+    """
+    Ledaig is the peated expression from Tobermory distillery.
+    Same distillery, different character — peated Ledaig commands
+    a premium over unpeated Tobermory in the modern era.
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1979 old era peated Ledaig
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ledaig", 5
+
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ledaig", 5
+    if has_age and not has_year:
+        if 2024 - age_years <= 1979:
+            return "vintage ledaig", 5
+
+    # Tier 4 — prestige: old vintage, named exclusives, 18yo+
+    if any(kw in title_lower for kw in
+           ["thompson bros", "thompson brothers",
+            "whisky jury", "dornoch",
+            "18 year", "19 year", "20 year",
+            "25 year", "30 year", "sinclair"]):
+        return "prestige release", 4
+    if has_age and age_years >= 18:
+        return "aged ledaig", 4
+
+    year_match2 = re.search(r'\b(198[0-9]|199[0-9])\b',
+                             title_lower)
+    if year_match2:
+        return "vintage ledaig", 4
+
+    # Tier 3 — premium expressions
+    if any(kw in title_lower for kw in
+           ["oloroso", "sherry", "marsala",
+            "port", "single cask", "cask strength"]):
+        return "premium ledaig", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year", "12 year"]):
+        return "core range", 2
+
+    return "standard ob", 2
+
+
+def detect_glenmorangie_expression(title, abv, bottling_year,
+                                    age_years):
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1979 old era and Manager's Dram
+    if "manager's dram" in title_lower or \
+       "managers dram" in title_lower:
+        return "managers dram", 5
+    if any(kw in title_lower for kw in
+           ["26 2/3", "circa 1970"]):
+        return "old era ob", 5
+
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ob", 5
+    if has_age and not has_year:
+        if 2024 - age_years <= 1979:
+            return "vintage ob", 5
+
+    # Tier 4 — prestige limited
+    if any(kw in title_lower for kw in
+           ["signet", "pride", "grand vintage",
+            "tain l'hermitage", "swamp oak",
+            "tuiga", "pommard", "malaga",
+            "cote de nuits", "private edition",
+            "25 year", "30 year"]):
+        return "prestige release", 4
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+
+    # 1980s-1990s limited wood finishes — prestige
+    year_match2 = re.search(r'\b(198[0-9]|199[0-5])\b',
+                             title_lower)
+    if year_match2:
+        return "vintage ob", 4
+
+    # Tier 3 — premium expressions
+    if any(kw in title_lower for kw in
+           ["lasanta", "quinta ruban", "nectar d'or",
+            "nectar dor", "astar", "companta",
+            "milsean", "bacalta", "spios",
+            "18 year", "21 year"]):
+        return "premium core", 3
+
+    # Tier 2 — core range
+    if any(kw in title_lower for kw in
+           ["10 year", "original", "12 year"]):
+        return "core range", 2
+
+    # Tier 1 — NAS entry
+    if "x by" in title_lower:
+        return "nas entry", 1
+
+    return "standard ob", 2
+
 # ---------------------------------------------------------------------------
 # IB series detection
 # ---------------------------------------------------------------------------
@@ -1885,6 +2163,21 @@ def detect_ob_expression(title, distillery, abv,
             title, abv, bottling_year, age_years)
     if dist == "Bruichladdich":
         return detect_bruichladdich_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Caol Ila":
+        return detect_caol_ila_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Mortlach":
+        return detect_mortlach_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Tobermory":
+        return detect_tobermory_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Ledaig":
+        return detect_ledaig_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Glenmorangie":
+        return detect_glenmorangie_expression(
             title, abv, bottling_year, age_years)
 
     return None, None
