@@ -2225,6 +2225,152 @@ def detect_bottler_series(title, bottler, abv,
     return None, None
 
 
+def detect_tomatin_expression(title, abv, bottling_year, age_years):
+    """
+    Tomatin — large Speyside distillery, mostly accessible core range.
+    Tier 5: pre-1980 vintage OBs (1967, 1978 Warehouse Collection)
+    Tier 4: named aged limited releases (36yo Batch, Cu Bocan Creation)
+    Tier 2: core range (12yo, 14yo, 18yo, Legacy, standard named)
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1980 vintage
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1980:
+        return "vintage ob", 5
+    if has_age and has_year:
+        if bottling_year - age_years <= 1980:
+            return "vintage ob", 5
+    if any(kw in title_lower for kw in
+           ["warehouse #6", "warehouse collection",
+            "26 2/3", "circa 1970"]):
+        return "vintage ob", 5
+
+    # Tier 4 — named limited releases people pay premium for
+    # "batch #" is too generic — catches cheap Cu Bocan batches at £40
+    # Only specific high-age named releases qualify
+    if any(kw in title_lower for kw in
+           ["36 year", "40 year", "50 year",
+            "cu bocan creation"]):
+        return "prestige release", 4
+    if has_age and age_years >= 36:
+        return "ultra aged", 4
+
+    # Tier 2 — core range
+    return "core range", 2
+
+
+def detect_ardnahoe_expression(title, abv, bottling_year, age_years):
+    """
+    Ardnahoe — new Islay distillery (est. 2019), all stock very young.
+    No tier 4 (too young, too little history).
+    Tier 3: Manager's Selection single casks, Taiwan/export exclusives,
+             early Feis Ile single casks — these command £400-560
+    Tier 2: standard core range
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 3 — named single casks and festival releases
+    if any(kw in title_lower for kw in
+           ["manager's selection", "managers selection",
+            "single cask", "feis ile", "feis ìle",
+            "taiwan", "exclusive"]):
+        return "prestige release", 3
+
+    # Tier 2 — core range
+    return "core range", 2
+
+
+def detect_oban_expression(title, abv, bottling_year, age_years):
+    """
+    Oban — small Diageo distillery, limited production.
+    Tier 5: Manager's Dram, pre-1979 vintage
+    Tier 4: Prima & Ultima, Distillers Edition pre-2010,
+             old age statement releases (1969 32yo etc.)
+    Tier 2: 14yo standard, Little Bay, modern DE
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — Manager's Dram and pre-1979
+    if any(kw in title_lower for kw in
+           ["manager's dram", "managers dram"]):
+        return "managers dram", 5
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ob", 5
+    if any(kw in title_lower for kw in ["26 2/3", "circa 1970"]):
+        return "vintage ob", 5
+
+    # Tier 4 — named prestige
+    if any(kw in title_lower for kw in
+           ["prima & ultima", "prima and ultima",
+            "casks of distinction"]):
+        return "prestige release", 4
+    # Pre-2010 Distillers Edition had genuine quality premium
+    if any(kw in title_lower for kw in
+           ["distillers edition", "distiller's edition"]):
+        if has_year and bottling_year <= 2010:
+            return "premium core", 4
+        return "core range", 2
+    if has_age and age_years >= 25:
+        return "ultra aged", 4
+
+    # Tier 2 — standard core range
+    return "core range", 2
+
+
+def detect_tamdhu_expression(title, abv, bottling_year, age_years):
+    """
+    Tamdhu — Speyside sherry specialist, decent lot count.
+    Tier 4: 21yo Cask Strength Limited Edition, Dalbeallie Dram
+             named batch releases — command £400+
+    Tier 3: Batch Strength numbered series
+    Tier 2: 10yo standard, 12yo, 15yo core range
+    """
+    title_lower = str(title).lower() if title else ""
+    has_age  = age_years is not None and not pd.isna(age_years)
+    has_year = bottling_year is not None and not pd.isna(bottling_year)
+
+    # Tier 5 — pre-1979 vintage
+    year_match = re.search(r'\b(19[5-7][0-9])\b', title_lower)
+    if year_match and int(year_match.group(1)) <= 1979:
+        return "vintage ob", 5
+    if has_age and has_year:
+        if bottling_year - age_years <= 1979:
+            return "vintage ob", 5
+
+    # Tier 4 — only truly scarce named releases
+    # Dalbeallie Dram individual bottles are cheap (£70-158)
+    # Only the complete sets command premium — those are excluded from training
+    if any(kw in title_lower for kw in
+           ["25 year", "30 year", "40 year"]):
+        return "prestige release", 4
+    if has_age and age_years >= 25:
+        return "prestige release", 4
+
+    # Tier 3 — Batch Strength, CS limited, 21yo CS
+    if any(kw in title_lower for kw in
+           ["batch strength", "batch #",
+            "cask strength", "single cask",
+            "limited edition"]):
+        return "premium core", 3
+    if "21 year" in title_lower or "18 year" in title_lower:
+        return "core range", 2
+
+    # Tier 2 — standard core range
+    return "core range", 2
+
+
+
 def detect_ob_expression(title, distillery, abv,
                           bottling_year, age_years):
     if not distillery:
@@ -2287,6 +2433,18 @@ def detect_ob_expression(title, distillery, abv,
             title, abv, bottling_year, age_years)
     if dist == "Kilchoman":
         return detect_kilchoman_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Tomatin":
+        return detect_tomatin_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Ardnahoe":
+        return detect_ardnahoe_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Oban":
+        return detect_oban_expression(
+            title, abv, bottling_year, age_years)
+    if dist == "Tamdhu":
+        return detect_tamdhu_expression(
             title, abv, bottling_year, age_years)
 
     return None, None
